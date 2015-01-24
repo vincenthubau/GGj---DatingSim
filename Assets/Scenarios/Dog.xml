@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="dog">
+	<dialog id="0" charName="Dog" place="school">
+		<text>Who are you? They accept all sorts into the school these days...</text>
+		<options>
+			<option id="0" link="1" affection="0" isEnd="false" itemCheck="0">What?</option>
+		</options>
+	</dialog>
+	<dialog id="1" charName="Dog" place="school">
+		<text>You heard me.</text>
+		<options>
+			<option id="0" link="1" affection="0" isEnd="false" itemCheck="0">...</option>
+		</options>
+	</dialog>
+	<dialog id="2" charName="Me" place="school">
+		<text>I did.</text>
+		<options>
+			<option id="0" link="3" affection="0" isEnd="false" itemCheck="0">Now I understand why people were saying horrible things about you.</option>
+			<option id="1" link="4" affection="0" isEnd="false" itemCheck="0">That's not a very nice thing to say.</option>
+			<option id="2" link="5" affection="0" isEnd="false" itemCheck="0">*Bluffing* You should be a bit more careful. That person you care about might have to pay a visit to the hospital soon.</option>
+		</options>
+	</dialog>
+	<dialog id="3" charName="Dog" place="school">
+		<text>Is that so?*I have to go take care of some things. I'll be keeping an eye on you.</text>
+		<options>
+			<option id="0" link="6" affection="0" isEnd="true" itemCheck="0">--></option>
+		</options>
+	</dialog> 
+	<dialog id="4" charName="Dog" place="school">
+		<text>It's hard to come up with anything good to say about someone like you.</text>
+		<options>
+			<option id="0" link="6" affection="0" isEnd="true" itemCheck="0">--></option>
+		</options>
+	</dialog> 
+	<dialog id="5" charName="Dog" place="school">
+		<text>Hah, you're bluffing.*I don't know who you're talking about.*I, uh, I need to go to the bathroom now. I'll remember you though, so you better watch it.</text>
+		<options>
+			<option id="0" link="6" affection="0" isEnd="true" itemCheck="0">--></option>
+		</options>
+	</dialog> 
+	
