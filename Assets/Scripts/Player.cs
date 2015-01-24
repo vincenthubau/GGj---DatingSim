@@ -27,10 +27,9 @@ public class Player : MonoBehaviour {
 				if(!isCollided) {
 					isCollided = true;
 					NPC npc = hit.collider.transform.gameObject.GetComponent<NPC>();
-					Debug.Log(npc.npcId);
 					//GUI.ShowColliderMessage = true;
 					//if(Input.GetKey(KeyCode.Space))
-						//GUI.SetNPC(npc.npcId);
+						//GUI.SetNPC(npc.name);
 				}
 			}
 			else isCollided = false;
