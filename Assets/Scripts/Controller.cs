@@ -16,7 +16,8 @@ public class Controller : MonoBehaviour
 
         //Load scenarios
         DialogManager.loadScenarios();
-
+		//Call the game Scene
+		Application.LoadLevel(1);
         
 	}
 	

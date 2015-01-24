@@ -77,6 +77,8 @@ public class DialogManager
             //Get character/scenario name
             string scenarioName = doc.SelectSingleNode("scenario").Attributes.GetNamedItem("name").Value;
 
+			Debug.Log(scenarioName);
+
             XmlNodeList dialogNodes = doc.SelectSingleNode("scenario").SelectNodes("dialog");  //Selects all <dialog> nodes
 
             //Get information in <dialog> nodes

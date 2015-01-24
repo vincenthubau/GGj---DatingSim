@@ -1,30 +1,67 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <scenario name="trial">
 	<dialog id="0">
-		<text>TEXT1</text>
+		<text>I see a science class through the window! There's a plant on the windowsill.*Should I open the window?</text>
 		<options>
-			<option id="0" link="2">OPTION1</option>
-			<option id="1" link="3">OPTION2</option>
-			<option id="2" link="4">OPTION3</option>
+			<option id="0" link="1">Yes</option>
+			<option id="1" link="0">No</option>
 		</options>
 	</dialog>
 	<dialog id="1">
-		<text>TEXT2</text>
+		<text>Ahh, sunlight! I never get enough of it through the glass!*So, um, is this your first day at the school?</text>
 		<options>
-			<option id="0" link="4">OPTION1</option>
-			<option id="1" link="4">OPTION2</option>
+			<option id="0" link="2">Yeah, it is... How did you know?</option>
 		</options>
 	</dialog>
 	<dialog id="2">
-		<text>TEXT3</text>
+		<text>Well... Usually no-one opens the window. There was an incident with the science teacher and this window.</text>
 		<options>
-			<option id="0" link="4">OPTION1</option>
+			<option id="0" link="3">Huh, really?</option>
 		</options>
 	</dialog>
 	<dialog id="3">
-		<text>FINISH!</text>
+		<text>Yeah. But I saw it all! He didn't do anything wrong!*It was just a lazy student spreading rumors because she didn't like science...</text>
 		<options>
-			<option id="0" link="4">M'KAY</option>
+			<option id="0" link="4">That's too bad...</option>
+		</options>
+	</dialog>
+	<dialog id="4">
+		<text>Yeah, it's super unfair! He's really nice! And science is super fun!*But I think people find him hard to approach. Still, no-one even asked me altough I was there all through it!</text>
+		<options>
+			<option id="0" link="5">Well</option>
 		</options>
 	</dialog> 
+	<dialog id="5">
+		<text></text>
+		<options>
+			<option id="0" link="6">I would definitely have asked you!</option>
+			<option id="1" link="7">That's kind of mean of them.</option>
+			<option id="2" link="8">You ARE a plant after all.</option>
+		</options>
+	</dialog> 
+	<dialog id="6">
+		<text>Really? Although I'm just a clumsy geeky plant! Thank you!*</text>
+		<options>
+			<option id="0" link="9">That's too bad...</option>
+		</options>
+	</dialog> 
+	<dialog id="7">
+		<text>Yeah, I thought so too...</text>
+		<options>
+			<option id="0" link="9">That's too bad...</option>
+		</options>
+	</dialog> 
+	<dialog id="8">
+		<text>I know, no need to remind me...</text>
+		<options>
+			<option id="0" link="9">That's too bad...</option>
+		</options>
+	</dialog>
+	<dialog id="9">
+		<text>Uh, I'm starting to run out of energy... No-one's watered me for a while...</text>
+		<options>
+			<option id="0" link="9">Water Hikae.</option>
+			<option id="1" link="9">Go away.</option>
+		</options>
+	</dialog>
 </scenario>
