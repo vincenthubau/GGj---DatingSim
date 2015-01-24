@@ -35,11 +35,9 @@ public class VisualNovelManager : MonoBehaviour {
 		playerTextbox.SetActive(false);
 
 		//Load Dialog of the character
-		//npcId = npcObject.name;
-		//dialogId = npcObject.dialogId;
+		npcId = npcObject.name;
+		dialogId = npcObject.dialogId;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
-		Debug.Log(npcId);
-		Debug.Log(dialogId);
 		m_string_text = dial.Text;
 		//m_string_text = "phrase1*phrase2*phrase3";
 
@@ -138,8 +136,6 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//
 	public void OnClickButton1(){
-		Debug.Log(npcId);
-		Debug.Log(dialogId);
 		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );
 		NextDialog(dial);
 	}
