@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="student1">
+	<dialog id="0" charName="Student #1" place="school">
+		<text>Ah... another worm came to bask into my magnificent glory.</text>
+		<options>
+			<option id="0" affection="0" link="1" itemCheck="0" isEnd="false">Have you done anything special that I don't know of?</option>
+			<option id="1" affection="0" link="2" itemCheck="0" isEnd="false">What is a bask?</option>
+			<option id="2" affection="0" link="3" itemCheck="0" isEnd="false">I like pies.</option>
+		</options>
+	</dialog>
+	<dialog id="1" charName="Student #1" place="school">
+		<text>Oh, but where are my manners!*Oh yes! I don't need any!*For I am the richest and most powerful young man in this game and you shall bow down to my greatness!</text>
+		<options>
+			<option id="0" affection="0" link="4" itemCheck="0" isEnd="false">You are also the most pretentious guy ever.</option>
+			<option id="1" affection="0" link="5" itemCheck="0" isEnd="false">How rich are you exactly?</option>
+			<option id="2" affection="0" link="3" itemCheck="0" isEnd="false">I like pies.</option>
+		</options>
+	</dialog>
+	<dialog id="2" charName="Student #1" place="school">
+		<text>Your feeble mind couldn't comprehend something even this simple.</text>
+		<options>
+			<option id="0" affection="0" link="6" itemCheck="0" isEnd="false">Well you can still try to explain me.</option>
+			<option id="1" affection="0" link="7" itemCheck="0" isEnd="false">I'm not sure I understood but I have a feeling you just insulted me.</option>
+			<option id="2" affection="0" link="8" itemCheck="0" isEnd="false">And I bet you can't count to banana.</option>
+		</options>
+	</dialog>
+	<dialog id="3" charName="Student #1" place="school">
+		<text>Yes. You like pies. Good for you.*Now off with you, my radiant intelligence can only handle so much idiocy.</text>
+		<options>
+			<option id="0" affection="0" link="3" itemCheck="0" isEnd="true">Whatever weirdo.</option>
+		</options>
+	</dialog>
+	<dialog id="4" charName="Student #1" place="school">
+		<text>I am not pretentious! How dare you insult my genius!*Hey! Are you even listening?*Don't you dare ignore me!!!</text>
+		<options>
+			<option id="0" affection="0" link="4" itemCheck="0" isEnd="true">Leave</option>
+		</options>
+	</dialog>
+	<dialog id="5" charName="Student #1" place="school">
+		<text>I am so rich I could buy this school.</text>
+		<options>
+			<option id="0" affection="0" link="5" itemCheck="0" isEnd="true">I see... I'll just leave you to your riches then.</option>
+			<option id="1" affection="0" link="9" itemCheck="0" isEnd="false">How many idiots does it take to interrupt a jerk?</option>
+		</options>
+	</dialog>
+	<dialog id="6" charName="Student #1" place="school">
+		<text>It would be a waste of time for me to do such a thing.</text>
+		<options>
+			<option id="0" affection="0" link="6" itemCheck="0" isEnd="true">Well aurevoir then, Mister Moneybag.</option>
+		</options>
+	</dialog>
+	<dialog id="7" charName="Student #1" place="school">
+		<text>You are even more stupid than I thought.</text>
+		<options>
+			<option id="0" affection="0" link="4" itemCheck="0" isEnd="false">At least I'm not a pretentious jerk like you.</option>
+			<option id="1" affection="0" link="7" itemCheck="0" isEnd="true">Sure, if you say so.</option>
+		</options>e                                                                                                                                                                                                                                                                                                                                     
+	</dialog>
+	<dialog id="8" charName="Student #1" place="school">
+		<text>What?</text>
+		<options>
+			<option id="0" affection="0" link="10" itemCheck="0" isEnd="false">Ah! I knew it, you can't count to banana!</option>
+		</options>
+	</dialog>
+	<dialog id="9" charName="Student #1" place="school">
+		<text>It tak...</text>
+		<options>
+			<option id="0" affection="0" link="9" itemCheck="0" isEnd="true">One. Bye.</option>
+		</options>
+	</dialog>
+	<dialog id="10" charName="Student #1" place="school">
+		<text>What does this have to do with anyt...</text>
+		<options>
+			<option id="0" affection="0" link="10" itemCheck="0" isEnd="true">Bye.</option>
+		</options>
+	</dialog>
+</scenario>

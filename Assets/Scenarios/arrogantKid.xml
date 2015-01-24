@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="arrogantKid">
+	<dialog id="0" charName="Arrogant Kid" place="school">
+		<text>I bet you can't kick that red ball above the wall, loser!</text>
+		<options>
+			<option id="0" affection="0" link="0" itemCheck="0" isEnd="true">That sounds like fun.</option>
+			<option id="1" affection="0" link="0" itemCheck="0" isEnd="true">I'll show you who can't kick balls you little brat!</option>
+		</options>
+	</dialog>
+</scenario>

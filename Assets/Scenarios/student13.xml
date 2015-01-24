@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="student13">
+	<dialog id="0" charName="Student #13" place="school">
+		<text>...</text>
+		<options>
+			<option id="0" affection="0" link="1" itemCheck="0" isEnd="false">Hello! It's a beautiful day isn't it?</option>
+			<option id="1" affection="0" link="1" itemCheck="0" isEnd="false">Not very talkative are we?</option>
+			<option id="2" affection="0" link="1" itemCheck="0" isEnd="false">Hey! Do you like pie?</option>
+		</options>
+	</dialog>
+	<dialog id="1" charName="Student #13" place="school">
+		<text>...</text>
+		<options>
+			<option id="0" affection="0" link="1" itemCheck="0" isEnd="true">Well... I guess I'll go then.</option>
+			<option id="1" affection="0" link="1" itemCheck="0" isEnd="true">Yeah screw you too.</option>
+			<option id="2" affection="0" link="1" itemCheck="0" isEnd="true">Potato.</option>
+		</options>
+	</dialog>
+</scenario>
