@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<scenario name="hikae">
-	<dialog id="0">
+<scenario name="saeki">
+	<dialog id="0" charName="Saeki" place="school">
 		<text>Huh? Why are you talking to me? Another admirer...?</text>
 		<options>
-			<option id="0" link="1">Uh...</option>
+			<option id="0" link="1" affection="0" isEnd="false" itemCheck="0">Uh...</option>
 		</options>
 	</dialog>
-	<dialog id="1">
+	<dialog id="1" charName="Saeki" place="school">
 		<text>Oh, you're not one?</text>
 		<options>
-			<option id="0" link="2">I only just met you...</option>
+			<option id="0" link="2" affection="0" isEnd="false" itemCheck="0">I only just met you...</option>
 		</options>
 	</dialog>
-	<dialog id="2">
+	<dialog id="2" charName="Saeki" place="school">
 		<text>Well, it is kind of refreshing to be around someone who isn't distracted by my looks.</text>
 		<options>
-			<option id="0" link="3">Is that a common problem?</option>
+			<option id="0" link="3" affection="0" isEnd="false" itemCheck="0">Does that happen to you a lot?</option>
 		</options>
 	</dialog>
-	<dialog id="3">
+	<dialog id="3" charName="Me" place="school">
 		<text>... /shrug/</text>
 		<options>
-			<option id="0" link="4">So, um...</option>
+			<option id="0" link="4" affection="0" isEnd="false" itemCheck="0">So, um...</option>
 		</options>
 	</dialog>
-	<dialog id="4">
+	<dialog id="4" charName="Me" place="school">
 		<text></text>
 		<options>
-			<option id="0" link="5">What are you into?</option>
-			<option id="1" link="6">You have kind of an unusual style.</option>
-			<option id="2" link="7">Are you a guy or a girl?</option>
+			<option id="0" link="5" affection="0" isEnd="false" itemCheck="0">What are you into?</option>
+			<option id="1" link="6" affection="0" isEnd="false" itemCheck="0">You have kind of an unusual style.</option>
+			<option id="2" link="7" affection="0" isEnd="false" itemCheck="0">Are you a guy or a girl?</option>
 		</options>
 	</dialog>
-	<dialog id="5">
+	<dialog id="5" charName="Saeki" place="school">
 		<text>You actually want to know? Uh, well, I really enjoy watching movies. It's kind of a hobby of mine.</text>
 		<options>
-			<option id="0" link="8">...</option>
+			<option id="0" link="8" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
-	<dialog id="6">
+	<dialog id="6" charName="Saeki" place="school">
 		<text>I get that a lot.</text>
 		<options>
-			<option id="0" link="8">...</option>
+			<option id="0" link="8" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
-	<dialog id="7">
+	<dialog id="7" charName="Saeki" place="school">
 		<text>Why is everyone so obsessed with my gender!?</text>
 		<options>
-			<option id="0" link="8">...</option>
+			<option id="0" link="8" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
-	<dialog id="8">
-		<text>Anyway. I'm kind of bored. Would be nice to see someone do something really impressive with that ball over there.</text>
+	<dialog id="8" charName="Saeki" place="school">
+		<text>Anyway. I'm kind of bored. Would be nice to see someone do something really crazy with that ball over there.</text>
 		<options>
-			<option id="0" link="9">Did you see what I did?</option>
-			<option id="0" link="8">Let's see.</option>
+			<option id="0" link="9" affection="0" isEnd="false" itemCheck="1">What do you think?</option>
+			<option id="0" link="8" affection="0" isEnd="false" itemCheck="1">Let's see.</option>
 		</options>
 	</dialog>
-	<dialog id="9">
-		<text>Wow, that was pretty impressive! I guess you're not too bad.*I don't have anything to do tonight, so I could use some company.</text>
+	<dialog id="9" charName="Saeki" place="school">
+		<text>Wow, that was pretty impressive! I guess you're not too bad.*I don't have anything to do tonight, you could keep me company if you want.</text>
 		<options>
-			<option id="0" link="10">/Suggest going to the movies?/</option>
-			<option id="0" link="9">Got to go</option>
+			<option id="0" link="10" affection="0" isEnd="false" itemCheck="0">/Suggest going to the movies?/</option>
+			<option id="0" link="9" affection="0" isEnd="true" itemCheck="0">Got to go</option>
 		</options>
 	</dialog>
-	<dialog id="10">
+	<dialog id="10" charName="Saeki" place="school">
 		<text></text>
 		<options>
-			<option id="0" link="11">Yes.</option>
-			<option id="0" link="12">No.</option>
+			<option id="0" link="11" affection="0" isEnd="false" itemCheck="0">Yes.</option>
+			<option id="0" link="12" affection="0" isEnd="false" itemCheck="0">No.</option>
 		</options>
 	</dialog>
-	<dialog id="11">
-		<text>Yeah, I guess I could go see a movie. I'll pick what we watch though! I'll see you there in three hours.</text>
+	<dialog id="11" charName="Saeki" place="school">
+		<text>Yeah, I guess I could go see a movie. I'll pick what we watch though! I'll see you there in two hours.</text>
 		<options>
-			<option id="0" link="14">Ok, see you there!</option>
+			<option id="0" link="14" affection="0" isEnd="false" itemCheck="0">Ok, see you there!</option>
 		</options>
 	</dialog>
-	<dialog id="12">
+	<dialog id="12" charName="Saeki" place="school">
 		<text>*Shrug* Nevermind then.</text>
 		<options>
-			<option id="0" link="13">...</option>
+			<option id="0" link="13" affection="0" isEnd="false" itemCheck="0">...</option>
 		</options>
 	</dialog>
-	<dialog id="13">
+	<dialog id="13" charName="Saeki" place="school">
 		<text>Oh, you came back? You want to go out after all?</text>
 		<options>
-			<option id="0" link="14">Yes.</option>
-			<option id="0" link="13">No.</option>
+			<option id="0" link="14" affection="0" isEnd="false" itemCheck="0">Yes.</option>
+			<option id="0" link="13" affection="0" isEnd="true" itemCheck="0">No.</option>
 		</options>
 	</dialog>
 </scenario>
