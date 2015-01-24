@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="kengo">
+	<dialog id="0">
+		<text>Hey! Are you new here?</text>
+		<options>
+			<option id="0" link="1">I am yeah.</option>
+		</options>
+	</dialog>
+	<dialog id="1">
+		<text>Welcome to MakkuGiru High School! I'm Kengo Herajima.*People may seem a bit unfriendly at first but I'm sure you'll settle in soon enough!</text>
+		<options>
+			<option id="0" link="2">...</option>
+		</options>
+	</dialog>
+	<dialog id="2">
+		<text>You're wondering why I'm here? Well, I guess I do seem a bit out of place, eh?*I'm just your regular young city moose really.*I'm hoping to make it big in ice hockey so moving to a big city seemed like a good move.</text>
+		<options>
+			<option id="0" link="3">Oh, well...</option>
+		</options>
+	</dialog>
+	<dialog id="3">
+		<text></text>
+		<options>
+			<option id="0" link="4">You'll definitely make it far, you seem very athletic and strong!</option>
+			<option id="1" link="5">I hope you'll do great in ice hockey.</option>
+			<option id="2" link="6">But you're a moose...</option>
+		</options>
+	</dialog>
+	<dialog id="4">
+		<text>You think so? Thank you!!! You're really nice!</text>
+		<options>
+			<option id="0" link="7">...</option>
+		</options>
+	</dialog> 
+	<dialog id="5">
+		<text>I'll do my best!</text>
+		<options>
+			<option id="0" link="7">...</option>
+		</options>
+	</dialog> 
+	<dialog id="6">
+		<text>Uh, well yeah, I know. I'm not letting it stop me though.</text>
+		<options>
+			<option id="0" link="7">...</option>
+		</options>
+	</dialog> 
+	<dialog id="7">
+		<text>Anyway, I like talking to you but I'm having trouble concentrating...*I have a bit of a history with that dog. *It's a huge bully and always puts the blame on me whenever it does something that's against the school rules. *And everyone loves dogs so of course they believe it rather than me...
+</text>
+		<options>
+			<option id="0" link="8">...</option>
+		</options>
+	</dialog> 
+	<dialog id="8">
+		<text>I hope he goes away before he does anything bad...</text>
+		<options>
+			<option id="0" link="9">He's gone.</option>
+			<option id="1" link="8"> Welp, he is still here.</option>
+		</options>
+	</dialog>
+	<dialog id="9">
+		<text>Did you just get the dog to leave? Thank you so much!*You seem like a really nice person, let's go out somewhere!</text>
+		<options>
+			<option id="0" link="10">Yeah, let's go amoose ourselves.</option>
+			<option id="1" link="12">I have otter things to do.</option>
+		</options>
+	</dialog>
+	<dialog id="10">
+		<text>So, what do we do now ?</text>
+		<options>
+			<option id="0" link="11">Let's go to La Banquise! I've been craving poutine recently!</option>
+		</options>
+	</dialog>
+	<dialog id="11">
+		<text>I love that place! I'll meet you there in three hours!</text>
+		<options>
+			<option id="0" link="14">...</option>
+		</options>
+	</dialog>
+	<dialog id="12">
+		<text>Ok, no problem! You know where to find me if you change your mind!</text>
+		<options>
+			<option id="0" link="13">...</option>
+		</options>
+	</dialog>
+	<dialog id="13">
+		<text>Hey, feel like going out yet?</text>
+		<options>
+			<option id="0" link="14">Yes.</option>
+			<option id="1" link="13">No.</option>
+		</options>
+	</dialog>
+	<dialog id="14">
+		<text>Banquise1</text>
+		<options>
+			<option id="0" link="16">/Go/</option>
+		</options>
+	</dialog>
+	<dialog id="15">
+		<text>Banquise2<text>
+		<options>
+			<option id="0" link="16">Yes</option>
+			<option id="0" link="15">No</option>
+		</options>
+	</dialog>
+	<dialog id="16">
+		<text>Banquise3</text>
+		<options>
+			<option id="0" link="">Glad to see you're feeling better!</option>
+		</options>
+	</dialog>
+	<dialog id="17">
+		<text>Banquise4</text>
+		<options>
+			<option id="0" link="">Glad to see you're feeling better!</option>
+		</options>
+	</dialog>
+</scenario>
