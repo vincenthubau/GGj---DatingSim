@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="bench">
+	<dialog id="0">
+		<text>I'm so tired... So much walking around...*I can barely feel my legs.*Oh, a bench! Should I sit on it?</text>
+		<options>
+			<option id="0" link="1">Yes</option>
+			<option id="1" link="2">Maybe</option>
+			<option id="2" link="3">No</option>
+		</options>
+	</dialog>
+	<dialog id="1">
+		<text>Yes, sitting on it sounds like a great idea.*Hey! Hey! Hey! Whatcha think you doin' punk?</text>
+		<options>
+			<option id="0" link="4">Oh I'm sorry!</option>
+			<option id="1" link="5">Sitting on you of course.</option>
+		</options>
+	</dialog>
+	<dialog id="2">
+		<text>What you lookin' at punk?</text>
+		<options>
+			<option id="0" link="5">I'm looking at you obviously.</option>
+			<option id="1" link="4">I'm sorry, I didn't mean to bother you.</option>
+		</options>
+	</dialog>
+	<dialog id="3">
+		<text>Punk!</text>
+		<options>
+			<option id="0" link="4">I'm sorry what?</option>
+			<option id="1" link="5">No you!</option>
+		</options>
+	</dialog>
+	<dialog id="4">
+		<text>You're lucky you didn't sit on me punk!*Cause I'd have beaten you up so hard...* You'd be prettier after I would have been done with you.</text>
+		<options>
+			<option id="0" link="6">Well I'm happy I didn't sit on you then.</option>
+			<option id="1" link="7">Are you a plastic surgeon?</option>
+			<option id="1" link="10">I'm going to kick your ass!</option>
+		</options>
+	</dialog>
+	<dialog id="5">
+		<text>You $@!%&! piece of !$?@ @$&?@! lover who like @$?&@?&! I'll $!$?%& your !$&?@@ face you $@?!.</text>
+		<options>
+			<option id="0" link="6">I'm sorry I didn't mean to offend you.</option>
+			<option id="1" link="10">Bring it on $@$?&!</option>
+		</options>
+	</dialog>
+	<dialog id="6">
+		<text>Get lost punk!*And don't you dare take that bottle of water that is so conveniently resting on me!*Punk!</text>
+		<options>
+			<option id="0" link="9">Take the bottle of water that is conveniently resting on him.</option>
+			<option id="1" link="8">Leave</option>
+		</options>
+	</dialog>
+	<dialog id="7">
+		<text>Yeah I am. How did you know?*Bah! It doesn't matter.*Here, take this awesome bottle of water.*It will help you in your mighty quest to be less of a loser.*Punk</text>
+		<options>
+			<option id="0" link="9">Take the bottle of water</option>
+			<option id="1" link="8">Leave</option>
+		</options>
+	</dialog>
+	<dialog id="8">
+		<text>Where you think you're going punk!*You think you can just leave this place like that?*There is only two ways this can end!*With you being dead!*Or with you taking this amazing bottle of water from my cold dead bench parts!</text>
+		<options>
+			<option id="0" link="10">Fight!</option>
+		</options>
+	</dialog>
+</scenario>
