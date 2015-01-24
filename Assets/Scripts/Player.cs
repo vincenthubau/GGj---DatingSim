@@ -9,38 +9,60 @@ public class Player : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	private bool isCollided = false;
 
+	private bool disableMove = false;
+	private NPC npc;
+	public GameObject interactText;
+	public GameObject visualNovelPart;
+	public Camera mainCamera;
+
 	void Update() {
 		CharacterController controller = GetComponent<CharacterController>();
 		//Feed moveDirection with input.
-		moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-		moveDirection = transform.TransformDirection(moveDirection);
+		if(!disableMove){
+			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+			moveDirection = transform.TransformDirection(moveDirection);
 
-		if(Input.GetKey(KeyCode.LeftArrow))
-			transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
-		if(Input.GetKey(KeyCode.RightArrow))
-			transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+			if(Input.GetKey(KeyCode.LeftArrow))
+				transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+			if(Input.GetKey(KeyCode.RightArrow))
+				transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
-		//Verify if the player is in range of an NPC.
-		RaycastHit hit;
-		if(Physics.Raycast(transform.position, moveDirection, out hit, colliderDistance)) {
-			if(hit.collider.tag == "NPC") {
-				if(!isCollided) {
-					isCollided = true;
-					NPC npc = hit.collider.transform.gameObject.GetComponent<NPC>();
-					//GUI.ShowColliderMessage = true;
-					//if(Input.GetKey(KeyCode.Space))
-						//GUI.SetNPC(npc.name);
+			//Verify if the player is in range of an NPC.
+			RaycastHit hit;
+			Ray test = mainCamera.ViewportPointToRay(new Vector3(0.5f,0.5f,0f));
+			Vector3 dir = test.direction;
+			if(Physics.Raycast(transform.position, dir, out hit, colliderDistance)) {
+				if(hit.collider.tag == "NPC") {
+					if(!isCollided) {
+						isCollided = true;
+						npc = hit.collider.transform.gameObject.GetComponent<NPC>();
+						interactText.SetActive(true);
+
+					}
+				}
+				else{
+					isCollided = false;
 				}
 			}
-			else isCollided = false;
+			else{
+				isCollided = false;
+				interactText.SetActive(false);
+			}
+			if(isCollided){
+				if(Input.GetKey(KeyCode.Space))
+				{
+					visualNovelPart.SetActive(true);
+					visualNovelPart.GetComponent<VisualNovelManager>().SetNPC(npc);
+					disableMove = true;
+				}
+			}
+			//Multiply it by speed.
+			moveDirection *= moveSpeed;
+			//Applying gravity to the controller
+			moveDirection.y -= gravity * Time.deltaTime;
+			//Making the character move
+			controller.Move(moveDirection * Time.deltaTime);
 		}
-		else isCollided = false;
-		//Multiply it by speed.
-		moveDirection *= moveSpeed;
-		//Applying gravity to the controller
-		moveDirection.y -= gravity * Time.deltaTime;
-		//Making the character move
-		controller.Move(moveDirection * Time.deltaTime);
 	}
 
 
