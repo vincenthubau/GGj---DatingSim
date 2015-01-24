@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class NPC : MonoBehaviour {
 	[SerializeField]
 	private string m_name;
+	public Slider affectionSlider;
 	public string name
 	{
 		get {return m_name; }
@@ -18,14 +20,15 @@ public class NPC : MonoBehaviour {
 	}
 
 	[SerializeField]
-	private int m_affection;
-	public int affection
+	private float m_affection = 0;
+	public float affection
 	{
 		get {return m_affection; }
 	}
 	
-	public void AddAffection(int amount) {
+	public void AddAffection(float amount) {
 		m_affection += amount;
+		affectionSlider.value = m_affection /100;
 	}
 
 	// Use this for initialization

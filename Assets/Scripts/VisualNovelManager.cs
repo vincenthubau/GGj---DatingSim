@@ -34,6 +34,7 @@ public class VisualNovelManager : MonoBehaviour {
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
 
+		npcObject.affectionSlider = gameObject.GetComponentInChildren<Slider>();
 		//Load Dialog of the character
 		npcId = npcObject.name;
 		dialogId = npcObject.dialogId;
@@ -136,6 +137,10 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//
 	public void OnClickButton1(){
+		Debug.Log(npcObject.affection);
+		if(npcObject.affection <100f){
+			npcObject.AddAffection(10f);
+		}
 		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );
 		NextDialog(dial);
 	}
