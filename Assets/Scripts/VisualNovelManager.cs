@@ -76,16 +76,15 @@ public class VisualNovelManager : MonoBehaviour {
 			List<Option> optionList = dial.getOptions();
 			playerButton1.GetComponentInChildren<Text>().text = optionList[0].Text;
 			playerButton2.SetActive(false);
-			if(optionList.Count > 2){
-				playerButton2.SetActive(true);
-				playerButton2.GetComponentInChildren<Text>().text = optionList[1].Text;
-			}
-			else if (optionList.Count == 2){
+			playerButton3.SetActive(false);
+			if (optionList.Count == 2){
 				playerButton2.SetActive(true);
 				playerButton2.GetComponentInChildren<Text>().text = optionList[1].Text;
 				playerButton3.SetActive(false);
 			}
 			else if(optionList.Count == 3){
+				playerButton2.SetActive(true);
+				playerButton2.GetComponentInChildren<Text>().text = optionList[1].Text;
 				playerButton3.SetActive(true);
 				playerButton3.GetComponentInChildren<Text>().text = optionList[2].Text;
 			}
@@ -137,8 +136,9 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//
 	public void OnClickButton1(){
-		Debug.Log(npcObject.affection);
-		if(npcObject.affection <100f){
+
+		//The way to add affection
+		if(npcObject.affection < 100f){
 			npcObject.AddAffection(10f);
 		}
 		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );

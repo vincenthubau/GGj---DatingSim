@@ -40,7 +40,7 @@
 		</options>
 	</dialog> 
 	<dialog id="6">
-		<text>Really? Although I'm just a clumsy geeky plant! Thank you!*</text>
+		<text>Really? Although I'm just a clumsy geeky plant! Thank you!</text>
 		<options>
 			<option id="0" link="9">That's too bad...</option>
 		</options>
