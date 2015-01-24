@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
 	private NPC npc;
 	public GameObject interactText;
 	public GameObject visualNovelPart;
+	private Rigidbody[] balloons;
 	public Camera mainCamera;
 
 	void Update() {
@@ -39,11 +40,22 @@ public class Player : MonoBehaviour {
 						isCollided = true;
 						npc = hit.collider.transform.gameObject.GetComponent<NPC>();
 						interactText.SetActive(true);
-
 					}
 				}
 				else{
-					isCollided = false;
+					if(hit.collider.tag == "Balloons"){
+						interactText.SetActive(true);
+						if(Input.GetKey(KeyCode.Space))
+						{
+							balloons = hit.collider.transform.gameObject.GetComponentsInChildren<Rigidbody>();
+							foreach(Rigidbody b in balloons){
+								b.constraints = RigidbodyConstraints.None;
+							}
+						}
+					}
+					else{
+						isCollided = false;
+					}
 				}
 			}
 			else{
