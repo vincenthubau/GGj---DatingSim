@@ -46,7 +46,7 @@
 	</dialog> 
 	<dialog id="7" charName="Kengo" place="school">
 		<text>Anyway, I like talking to you but I'm having trouble concentrating...*I have a bit of a history with that dog. *It's a huge bully and always puts the blame on me whenever it does something that's against the school rules. *And everyone loves dogs so of course they believe it rather than me...
-</text>
+		</text>
 		<options>
 			<option id="0" link="8" affection="0" isEnd="false" itemCheck="0">...</option>
 		</options>
@@ -94,25 +94,6 @@
 		<text>Banquise1</text>
 		<options>
 			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">/Go/</option>
-		</options>
-	</dialog>
-	<dialog id="15" charName="Kengo" place="banquise">
-		<text>Banquise2<text>
-		<options>
-			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">Yes</option>
-			<option id="0" link="15" affection="0" isEnd="false" itemCheck="1">No</option>
-		</options>
-	</dialog>
-	<dialog id="16" charName="Kengo" place="banquise">
-		<text>Banquise3</text>
-		<options>
-			<option id="0" link="" affection="0" isEnd="false" itemCheck="1">Glad to see you're feeling better!</option>
-		</options>
-	</dialog>
-	<dialog id="17" charName="Kengo" place="banquise">
-		<text>Banquise4</text>
-		<options>
-			<option id="0" link="" affection="0" isEnd="false" itemCheck="1">Glad to see you're feeling better!</option>
 		</options>
 	</dialog>
 </scenario>

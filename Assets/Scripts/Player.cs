@@ -93,4 +93,13 @@ public class Player : MonoBehaviour {
 			pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 		body.velocity += pushDir * pushPower;
 	}
+
+	public void GetDisableMove(){
+		Debug.Log(disableMove);
+	}
+
+	public void SetDisableMoveTrue(){
+		disableMove = false;
+		GetDisableMove();
+	}
 }

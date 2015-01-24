@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<scenario name="trial">
+<scenario name="bench">
 	<dialog id="0" charName="me" place="school">
 		<text>I'm so tired... So much walking around...*I can barely feel my legs.*Oh, a bench! Should I sit on it?</text>
 		<options>
@@ -34,7 +34,7 @@
 		<options>
 			<option id="0" affection="0" link="6" itemCheck="0" isEnd="false">Well I'm happy I didn't sit on you then.</option>
 			<option id="1" affection="0" link="7" itemCheck="0" isEnd="false">Are you a plastic surgeon?</option>
-			<option id="1" affection="0" link="4" itemCheck="2" isEnd="true">I'm going to kick your ass!</option>
+			<option id="2" affection="0" link="4" itemCheck="2" isEnd="true">I'm going to kick your ass!</option>
 		</options>
 	</dialog>
 	<dialog id="5" charName="bench" place="school">

@@ -96,10 +96,10 @@
 		</options>
 	</dialog>
 	<dialog id="15" charName="Hikae" place="school">
-		<text>You came back! Do you want to do something together?<text>
+		<text>You came back! Do you want to do something together?</text>
 		<options>
 			<option id="0" link="16" affection="0" isEnd="false" itemCheck="0">Yes</option>
-			<option id="0" link="15" affection="0" isEnd="true" itemCheck="0">No</option>
+			<option id="1" link="15" affection="0" isEnd="true" itemCheck="0">No</option>
 		</options>
 	</dialog>
 	<dialog id="16" charName="Hikae" place="park">
@@ -107,6 +107,7 @@
 		<options>
 			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
+	</dialog>
 	<dialog id="17" charName="Me" place="park">
 		<text></text>
 		<options>

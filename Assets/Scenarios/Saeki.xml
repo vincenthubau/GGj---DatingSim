@@ -54,21 +54,21 @@
 		<text>Anyway. I'm kind of bored. Would be nice to see someone do something really crazy with that ball over there.</text>
 		<options>
 			<option id="0" link="9" affection="0" isEnd="false" itemCheck="1">What do you think?</option>
-			<option id="0" link="8" affection="0" isEnd="false" itemCheck="1">Let's see.</option>
+			<option id="1" link="8" affection="0" isEnd="false" itemCheck="1">Let's see.</option>
 		</options>
 	</dialog>
 	<dialog id="9" charName="Saeki" place="school">
 		<text>Wow, that was pretty impressive! I guess you're not too bad.*I don't have anything to do tonight, you could keep me company if you want.</text>
 		<options>
 			<option id="0" link="10" affection="0" isEnd="false" itemCheck="0">/Suggest going to the movies?/</option>
-			<option id="0" link="9" affection="0" isEnd="true" itemCheck="0">Got to go</option>
+			<option id="1" link="9" affection="0" isEnd="true" itemCheck="0">Got to go</option>
 		</options>
 	</dialog>
 	<dialog id="10" charName="Saeki" place="school">
 		<text></text>
 		<options>
 			<option id="0" link="11" affection="0" isEnd="false" itemCheck="0">Yes.</option>
-			<option id="0" link="12" affection="0" isEnd="false" itemCheck="0">No.</option>
+			<option id="1" link="12" affection="0" isEnd="false" itemCheck="0">No.</option>
 		</options>
 	</dialog>
 	<dialog id="11" charName="Saeki" place="school">
@@ -87,7 +87,7 @@
 		<text>Oh, you came back? You want to go out after all?</text>
 		<options>
 			<option id="0" link="14" affection="0" isEnd="false" itemCheck="0">Yes.</option>
-			<option id="0" link="13" affection="0" isEnd="true" itemCheck="0">No.</option>
+			<option id="1" link="13" affection="0" isEnd="true" itemCheck="0">No.</option>
 		</options>
 	</dialog>
 </scenario>

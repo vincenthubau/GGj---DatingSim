@@ -15,6 +15,7 @@ public class VisualNovelManager : MonoBehaviour {
 	public GameObject playerButton2;
 	public GameObject playerButton3;
 	public NPC npcObject;
+	public Player player;
 
 	//private
 	string m_string_text;
@@ -38,10 +39,8 @@ public class VisualNovelManager : MonoBehaviour {
 		npcObject.affectionSlider = gameObject.GetComponentInChildren<Slider>();
 
 		//Load Dialog of the character
-		//npcId = npcObject.name;
-		//dialogId = npcObject.dialogId;
-		npcId = "example";
-		dialogId = 0;
+		npcId = npcObject.name;
+		dialogId = npcObject.dialogId;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
 		optionList = dial.getOptions();
 		//Load Background
@@ -107,9 +106,7 @@ public class VisualNovelManager : MonoBehaviour {
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
 		m_string_text = d.Text;
-		//m_string_text = "phrase1*phrase2*phrase3";
-		
-		//Debug.Log("Original text: '{0}'" + m_string_text);
+		optionList = d.getOptions();
 		//Parse the string
 		m_stringArray_phrases = m_string_text.Split(m_charArray_delimiterChars);
 		//Debug.Log("{0} words in text:" + m_stringArray_phrases.Length);
@@ -153,6 +150,8 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 		if(optionList[0].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(0);
+			player.SetDisableMoveTrue();
+			gameObject.SetActive(false);
 		}
 		else{
 			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );
@@ -168,6 +167,8 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 		if(optionList[1].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(1);
+			player.SetDisableMoveTrue();
+			gameObject.SetActive(false);
 		}
 		else{
 			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(1) );
@@ -183,6 +184,8 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 		if(optionList[2].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(2);
+			player.SetDisableMoveTrue();
+			gameObject.SetActive(false);
 		}
 		else{
 			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(2) );
