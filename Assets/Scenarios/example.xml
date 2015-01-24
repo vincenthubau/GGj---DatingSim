@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="charName">
+	<dialog id="0" charName="whoIsSpeaking" place="hell">
+		<text>Wanna get high?</text>
+		<options>
+			<option id="0" affection="0.5" link="1" isEnd="true">Uh...</option>
+		</options>
+	</dialog>
+</scenario>

@@ -9,9 +9,15 @@ using System.Collections.Generic;
 
 public struct Option
 {
-    public string Text { get; set; }
+    public bool IsEnd { get; set; }
+
     public int Link { get; set; }
     public int Id { get; set; }
+
+    public float AffectionValue { get; set; }
+
+    public string Text { get; set; }
+    
 }
 
 public class Dialog
@@ -19,13 +25,18 @@ public class Dialog
     //MEMBERS
     private Dictionary<int, Option> m_dicOptions = new Dictionary<int,Option>();
 
-    public string Text { get; private set; }
     public int Id { get; private set; }
+    public string Place { get; set; }
+    public string CharacterName { get; set; }
+    public string Text { get; private set; }
+    
 
     //CONSTRACTOR
-    public Dialog(int id, string text, List<Option>options)
+    public Dialog(int id, string characterName, string place, string text, List<Option>options)
     {
         this.Id = id;
+        this.CharacterName = characterName;
+        this.Place = place;
         this.Text = text;
 
         //Assign Options

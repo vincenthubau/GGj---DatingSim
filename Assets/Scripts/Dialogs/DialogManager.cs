@@ -86,6 +86,8 @@ public class DialogManager
             {
                 //Get dialog id
                 int dialogId = Convert.ToInt32(dialogNode.Attributes.GetNamedItem("id").Value);
+                string dialogCharName = dialogNode.Attributes.GetNamedItem("charName").Value;
+                string dialogPlace = dialogNode.Attributes.GetNamedItem("place").Value;
 
                 //Get text
                 string dialogText = dialogNode.SelectSingleNode("text").InnerText;
@@ -99,8 +101,14 @@ public class DialogManager
                     //Get optionid
                     newOption.Id = Convert.ToInt32(optionNode.Attributes.GetNamedItem("id").Value);
 
+                    //Get affection value
+                    newOption.AffectionValue = Convert.ToSingle(optionNode.Attributes.GetNamedItem("affection").Value);
+
                     //Get link to the Dialog
                     newOption.Link = Convert.ToInt32(optionNode.Attributes.GetNamedItem("link").Value);
+
+                    //Get isEnd attribute
+                    newOption.IsEnd = Convert.ToBoolean(optionNode.Attributes.GetNamedItem("isEnd").Value);
 
                     //Get text
                     newOption.Text = optionNode.InnerText;
@@ -110,7 +118,7 @@ public class DialogManager
                 }
 
                 //Create a Dialog objcect and init it
-                Dialog newDialog = new Dialog(dialogId, dialogText, optionsList);
+                Dialog newDialog = new Dialog(dialogId, dialogCharName, dialogPlace, dialogText, optionsList);
 
                 //Add new Dialog into the Dialog list
                 dialogList.Add(newDialog);
