@@ -5,6 +5,8 @@ public class Player : MonoBehaviour {
 	public float moveSpeed = 6.0F;
 	public float gravity = 20.0F;
 	public float turnSpeed = 100.0F;
+	public float pushPower = 2.0F;
+	public float kickStrength = 1.0F;
 	public float colliderDistance = 1.2F;
 	private Vector3 moveDirection = Vector3.zero;
 	private bool isCollided = false;
@@ -65,5 +67,18 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-
+	void OnControllerColliderHit(ControllerColliderHit hit) {
+		Rigidbody body = hit.collider.attachedRigidbody;
+		if (body == null || body.isKinematic)
+			return;
+		
+		if (hit.moveDirection.y < -0.3F)
+			return;
+		Vector3 pushDir;
+		if(Input.GetKey(KeyCode.E))
+			pushDir = new Vector3(hit.moveDirection.x, kickStrength, hit.moveDirection.z);
+		else
+			pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+		body.velocity += pushDir * pushPower;
+	}
 }
