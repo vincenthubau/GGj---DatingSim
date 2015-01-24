@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="normalKid42">
+	<dialog id="0">
+		<text>Hello young man.*Go away fatty!</text>
+		<options>
+			<option id="0" link="1">Why are you so mean?</option>
+			<option id="1" link="X">Ok...</option>
+		</options>
+	</dialog>
+	<dialog id="1">
+		<text>Because you are fat, ugly and you smell like poo!</text>
+		<options>
+			<option id="0" link="2">Well... I do smell like poo.</option>
+			<option id="1" link="3">True beauty is on the inside.</option>
+			<option id="2" link="4">Oh yeah? Well... at least... at least I'm not as fat as your mom!</option>
+		</options>
+	</dialog>
+	<dialog id="2">
+		<text>...*...*...*Really?*Don't you have any self respect?*You shouldn't let other people push you around like that and be so neutral about it!* Especially not by kids like me!</text>
+		<options>
+			<option id="0" link="5">You're right. I should believe in myself and follow my dreams.</options>
+		</options>
+	</dialog>
+	<dialog id="3">
+		<text>Get lost.</text>
+		<options>
+			<option id="0" link="X">Ok.</option>
+		</options>
+	</dialog>
+	<dialog id="4">
+		<text>It's not my fault she waste all of our money on donuts and beer while she watch TV all day long!*Yes! Yes, she's fat. She's the fattest person alive and I hate her!</text>
+		<options>
+			<option id="0" link="X">I think I'm going to leave now...</option>
+			<option id="1" link="6">I'm sorry I didn't mean to be so mean.</option>
+	</dialog>
+	<dialog id="5">
+		<text>That's not what I sai...</text>
+		<options>
+			<option id="0" link="3">I feels so great now! I feel like I could accomplish anything!</option>
+		</options>
+	</dialog>
+	<dialog id="6">
+		<text>It's okay you didn't know.*Now leave me alone.</text>
+		<options>
+			<option id="0" link="X">Ok.</option>
+		</options>
+	</dialog>
+</scenario>
