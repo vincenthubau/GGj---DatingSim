@@ -3,10 +3,10 @@ using System.Collections;
 
 public class NPC : MonoBehaviour {
 	[SerializeField]
-	private int m_npcId;
-	public int npcId
+	private string m_name;
+	public string name
 	{
-		get {return m_npcId; }
+		get {return m_name; }
 	}
 
 	[SerializeField]
