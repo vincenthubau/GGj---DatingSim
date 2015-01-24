@@ -107,6 +107,9 @@ public class DialogManager
                     //Get link to the Dialog
                     newOption.Link = Convert.ToInt32(optionNode.Attributes.GetNamedItem("link").Value);
 
+                    //Get item checker
+                    newOption.ItemCheck = Convert.ToInt32(optionNode.Attributes.GetNamedItem("itemCheck").Value);
+
                     //Get isEnd attribute
                     newOption.IsEnd = Convert.ToBoolean(optionNode.Attributes.GetNamedItem("isEnd").Value);
 

@@ -11,8 +11,9 @@ public struct Option
 {
     public bool IsEnd { get; set; }
 
-    public int Link { get; set; }
     public int Id { get; set; }
+    public int Link { get; set; }
+    public int ItemCheck { get; set; }
 
     public float AffectionValue { get; set; }
 
