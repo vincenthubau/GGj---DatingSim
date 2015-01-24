@@ -23,6 +23,7 @@ public class VisualNovelManager : MonoBehaviour {
 	int m_int_count, m_int_oldcount, m_int_currentcount;
 
 	Dialog dial;
+	List<Option> optionList;
 
 	bool canPrint = false;
 
@@ -35,18 +36,26 @@ public class VisualNovelManager : MonoBehaviour {
 		playerTextbox.SetActive(false);
 
 		npcObject.affectionSlider = gameObject.GetComponentInChildren<Slider>();
+
 		//Load Dialog of the character
-		npcId = npcObject.name;
-		dialogId = npcObject.dialogId;
+		//npcId = npcObject.name;
+		//dialogId = npcObject.dialogId;
+		npcId = "example";
+		dialogId = 0;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
+		optionList = dial.getOptions();
+		//Load Background
+		//dial.Place;
+		//Load Character
+		//if(dial.CharacterName != "Me")
+		//dial.CharacterName
+		npcNameText.GetComponent<Text>().text = dial.CharacterName;
+
 		m_string_text = dial.Text;
-		//m_string_text = "phrase1*phrase2*phrase3";
 
-
-		//Debug.Log("Original text: '{0}'" + m_string_text);
 		//Parse the string
 		m_stringArray_phrases = m_string_text.Split(m_charArray_delimiterChars);
-		//Debug.Log("{0} words in text:" + m_stringArray_phrases.Length);
+
 		//Set the counter so it knows when the dialog as ended
 		m_int_count = m_stringArray_phrases.Length;
 		m_int_currentcount = 0;
@@ -73,7 +82,6 @@ public class VisualNovelManager : MonoBehaviour {
 			//Options
 			npcTextbox.SetActive(false);
 			playerTextbox.SetActive(true);
-			List<Option> optionList = dial.getOptions();
 			playerButton1.GetComponentInChildren<Text>().text = optionList[0].Text;
 			playerButton2.SetActive(false);
 			playerButton3.SetActive(false);
@@ -138,21 +146,48 @@ public class VisualNovelManager : MonoBehaviour {
 	public void OnClickButton1(){
 
 		//The way to add affection
-		if(npcObject.affection < 100f){
-			npcObject.AddAffection(10f);
+		if(optionList[0].AffectionValue > 0){
+			if(npcObject.affection < 100f){
+				npcObject.AddAffection(optionList[1].AffectionValue);
+			}
 		}
-		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );
-		NextDialog(dial);
+		if(optionList[0].IsEnd){
+			npcObject.dialogId = dial.getNextDialogId(0);
+		}
+		else{
+			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );
+			NextDialog(dial);
+		}
 	}
 
 	public void OnClickButton2(){
-		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(1) );
-		NextDialog(dial);
+		if(optionList[1].AffectionValue > 0){
+			if(npcObject.affection < 100f){
+				npcObject.AddAffection(optionList[1].AffectionValue);
+			}
+		}
+		if(optionList[1].IsEnd){
+			npcObject.dialogId = dial.getNextDialogId(1);
+		}
+		else{
+			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(1) );
+			NextDialog(dial);
+		}
 	}
 
 	public void OnClickButton3(){
-		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(2) );
-		NextDialog(dial);
+		if(optionList[2].AffectionValue > 0){
+			if(npcObject.affection < 100f){
+				npcObject.AddAffection(optionList[1].AffectionValue);
+			}
+		}
+		if(optionList[2].IsEnd){
+			npcObject.dialogId = dial.getNextDialogId(2);
+		}
+		else{
+			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(2) );
+			NextDialog(dial);
+		}
 	}
 }
 

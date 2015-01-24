@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <scenario name="hikae">
-	<dialog id="0" charName="Me" place="school">>
+	<dialog id="0" charName="Me" place="school">
 		<text>I see a science class through the window! There's a plant on the windowsill.*Should I open the window?</text>
 		<options>
 			<option id="0" link="1" affection="0" isEnd="false" itemCheck="0">Yes</option>
