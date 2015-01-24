@@ -45,4 +45,13 @@ public class Dialog
     {
         return m_dicOptions[optionId].Link;
     }
+
+    /// <summary>
+    /// Uses for getting all Option objcts as a list
+    /// </summary>
+    /// <returns>List of Option objects</returns>
+    public List<Option> getOptions()
+    {
+        return new List<Option>(m_dicOptions.Values);
+    }
 }
