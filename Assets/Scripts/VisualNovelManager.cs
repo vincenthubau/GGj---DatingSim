@@ -35,9 +35,11 @@ public class VisualNovelManager : MonoBehaviour {
 		playerTextbox.SetActive(false);
 
 		//Load Dialog of the character
-
-		//dial = DialogManager.getNextDialog(npcObject.npcId, npcObject.dialogId);
+		//npcId = npcObject.name;
+		//dialogId = npcObject.dialogId;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
+		Debug.Log(npcId);
+		Debug.Log(dialogId);
 		m_string_text = dial.Text;
 		//m_string_text = "phrase1*phrase2*phrase3";
 
@@ -75,16 +77,18 @@ public class VisualNovelManager : MonoBehaviour {
 			List<Option> optionList = dial.getOptions();
 			playerButton1.GetComponentInChildren<Text>().text = optionList[0].Text;
 			playerButton2.SetActive(false);
-			if(optionList.Count >= 2){
+			if(optionList.Count > 2){
 				playerButton2.SetActive(true);
 				playerButton2.GetComponentInChildren<Text>().text = optionList[1].Text;
+			}
+			else if (optionList.Count == 2){
+				playerButton2.SetActive(true);
+				playerButton2.GetComponentInChildren<Text>().text = optionList[1].Text;
+				playerButton3.SetActive(false);
 			}
 			else if(optionList.Count == 3){
 				playerButton3.SetActive(true);
 				playerButton3.GetComponentInChildren<Text>().text = optionList[2].Text;
-			}
-			else{
-				playerButton3.SetActive(false);
 			}
 		}
 		//The wait for the keypress
@@ -134,6 +138,8 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//
 	public void OnClickButton1(){
+		Debug.Log(npcId);
+		Debug.Log(dialogId);
 		dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(0) );
 		NextDialog(dial);
 	}
