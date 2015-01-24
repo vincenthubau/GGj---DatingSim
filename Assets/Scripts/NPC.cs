@@ -17,6 +17,17 @@ public class NPC : MonoBehaviour {
 		set {m_dialogId = value; }
 	}
 
+	[SerializeField]
+	private int m_affection;
+	public int affection
+	{
+		get {return m_affection; }
+	}
+	
+	public void AddAffection(int amount) {
+		m_affection += amount;
+	}
+
 	// Use this for initialization
 	void Start () {
 	
