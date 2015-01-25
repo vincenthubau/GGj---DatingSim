@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="ISTDS_PThomas_Cours_JeremyGavoile_141210" Platform="Mac" Motion="false">
-	<Plugins>
-		<Plugin Name="Wwise Silence" ID="6619138"/>
-		<Plugin Name="Wwise Meter" ID="8454147"/>
-	</Plugins>
-</PluginInfo>
