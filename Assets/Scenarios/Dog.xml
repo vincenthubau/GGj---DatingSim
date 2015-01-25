@@ -9,7 +9,7 @@
 	<dialog id="1" charName="Dog" place="school">
 		<text>You heard me.</text>
 		<options>
-			<option id="0" link="1" affection="0" isEnd="false" itemCheck="0">...</option>
+			<option id="0" link="2" affection="0" isEnd="false" itemCheck="0">...</option>
 		</options>
 	</dialog>
 	<dialog id="2" charName="Me" place="school">
