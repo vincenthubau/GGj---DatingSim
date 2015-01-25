@@ -20,6 +20,8 @@ public class VisualNovelManager : MonoBehaviour {
 	
 	public HubSoundStarter Hub_MusicScript;
 	public HubSoundStarter Hub_AmbiantScript;
+	public AudioClip defaultAmbiant;
+	public AudioClip defaultBackgroundMusic;
 
 	//private
 	string m_string_text;
@@ -37,6 +39,7 @@ public class VisualNovelManager : MonoBehaviour {
 	bool canPrint = false;
 
 	void Start(){ 
+
 	}
 
 	void Init() {
@@ -191,6 +194,9 @@ public class VisualNovelManager : MonoBehaviour {
 			default: break;
 			}
 		}
+		else{
+			backgroundImage.SetActive(false);
+		}
 	}
 	//Depending on the place contained in the Dialog, we set the correct ambiant sound for the character
 	void SetAmbiant(Dialog d){
@@ -204,6 +210,9 @@ public class VisualNovelManager : MonoBehaviour {
 				break;
 			default: break;
 			}
+		}
+		else{
+			Hub_AmbiantScript.hubSound = defaultAmbiant;
 		}
 	}
 
