@@ -181,13 +181,13 @@
 	<dialog id="28" charName="Kengo" place="date1">
 		<text>They're making big conclusions about what I can do just based on the way I look.</text>
 		<options>
-			<option id="1" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="29" charName="Kengo" place="date1">
 		<text>You too? Well, I do just fine...</text>
 		<options>
-			<option id="2" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="30" charName="Kengo" place="date1">
