@@ -23,19 +23,19 @@
 	<dialog id="3" charName="Dog" place="school">
 		<text>Is that so?*I have to go take care of some things. I'll be keeping an eye on you.</text>
 		<options>
-			<option id="0" link="6" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="5" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="4" charName="Dog" place="school">
 		<text>It's hard to come up with anything good to say about someone like you.</text>
 		<options>
-			<option id="0" link="6" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="5" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="5" charName="Dog" place="school">
 		<text>Hah, you're bluffing.*I don't know who you're talking about.*I, uh, I need to go to the bathroom now. I'll remember you though, so you better watch it.</text>
 		<options>
-			<option id="0" link="6" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="5" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 </scenario>

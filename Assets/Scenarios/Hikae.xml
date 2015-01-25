@@ -254,9 +254,110 @@
 		</options>
 	</dialog> 
 	<dialog id="40" charName="Hikae" place="date2">
-		<text>I'm sorry, I didn't mean to imply anything like that!</text>
+		<text>We're here! The dome looks even more impressive in person than I had imagined!</text>
 		<options>
-			<option id="0" link="41" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="41" affection="0" isEnd="false" itemCheck="0">--</option>
+		</options>
+	</dialog>
+	<dialog id="41" charName="Me" place="date2">
+		<text></text>
+		<options>
+			<option id="0" link="42" affection="5" isEnd="false" itemCheck="0">Yeah, it does! I wish we could still see the original setup used to have before the fire...</option>
+			<option id="1" link="43" affection="3" isEnd="false" itemCheck="0">It's pretty cool, yeah.</option>
+			<option id="2" link="44" affection="0" isEnd="false" itemCheck="0">Dunno, not very interesting if you ask me...</option>
+		</options>
+	</dialog> 
+	<dialog id="42" charName="Hikae" place="date2">
+		<text>Me too, I've read about it and it sounded incredible for its time!</text>
+		<options>
+			<option id="0" link="45" affection="0" isEnd="false" itemCheck="0">--></option>
+		</options>
+	</dialog> 
+	<dialog id="43" charName="Hikae" place="date2">
+		<text>You think so too? It must have looked incredible when it was still intact...</text>
+		<options>
+			<option id="0" link="45" affection="0" isEnd="false" itemCheck="0">--></option>
+		</options>
+	</dialog> 
+	<dialog id="44" charName="Hikae" place="date2">
+		<text>Uh... That's ok, everyone has different tastes after all!</text>
+		<options>
+			<option id="0" link="45" affection="0" isEnd="false" itemCheck="0">--></option>
+		</options>
+	</dialog>
+	<dialog id="45" charName="Hikae" place="date2">
+		<text>Oh hey, they have a video with scientists talking about the climate! Let's go see it!</text>
+		<options>
+			<option id="0" link="46" affection="0" isEnd="false" itemCheck="0">Ok!</option>
+		</options>
+	</dialog>
+	<dialog id="46" charName="Hikae" place="date2">
+		<text>That was very fascinating! I hope I can be a scientist one day!</text>
+		<options>
+			<option id="0" link="47" affection="0" isEnd="false" itemCheck="0">--></option>
+		</options>
+	</dialog>
+	<dialog id="47" charName="Me" place="date2">
+		<text></text>
+		<options>
+			<option id="0" link="48" affection="5" isEnd="false" itemCheck="0">You can definitely become a scientist if you work hard! You're really smart!</option>
+			<option id="1" link="49" affection="3" isEnd="false" itemCheck="0">It might be hard but I'm sure you can do it if you try!</option>
+			<option id="2" link="50" affection="0" isEnd="false" itemCheck="0">That's a weird dream for a plant to have...</option>
+		</options>
+	</dialog> 
+	<dialog id="48" charName="Hikae" place="date2">
+		<text>Ah, you're making me embarassed... But I'm glad to hear you believe in me!</text>
+		<options>
+			<option id="0" link="51" affection="0" isEnd="false" itemCheck="0">Of course!</option>
+		</options>
+	</dialog> 
+	<dialog id="49" charName="Hikae" place="date2">
+		<text>Yes, I think so too! I will try my best!</text>
+		<options>
+			<option id="0" link="51" affection="0" isEnd="false" itemCheck="0">Please do!</option>
+		</options>
+	</dialog> 
+	<dialog id="50" charName="Hikae" place="date2">
+		<text>I know, I wonder if it's possible at all...</text>
+		<options>
+			<option id="0" link="51" affection="0" isEnd="false" itemCheck="0">/Shrug/</option>
+		</options>
+	</dialog>
+	<dialog id="51" charName="Hikae" place="date2">
+		<text>Let's go see that exhibition next!</text>
+		<options>
+			<option id="0" link="52" affection="0" isEnd="false" itemCheck="0">Ok!</option>
+		</options>
+	</dialog>
+	<dialog id="52" charName="Hikae" place="date2">
+		<text>This looks very interesting!*Uh, how does it work...</text>
+		<options>
+			<option id="0" link="53" affection="0" isEnd="false" itemCheck="0">Ah, I think I know!*Here, let me show you how...</option>
+		</options>
+	</dialog>
+	<dialog id="53" charName="Hikae" place="date2">
+		<text>You feel warm...</text>
+		<options>
+			<option id="0" link="54" affection="0" isEnd="false" itemCheck="0">...</option>
+		</options>
+	</dialog>
+	<dialog id="54" charName="Hikae" place="date2">
+		<text>Uh... It started working now...</text>
+		<options>
+			<option id="0" link="55" affection="0" isEnd="false" itemCheck="0">Oh, you're right! Hehehehh...!</option>
+		</options>
+	</dialog>
+		<dialog id="55" charName="Hikae" place="date2">
+		<text>It's getting late, I should probably get back to the school now... I had a really great time though! Will I see you again soon?</text>
+		<options>
+			<option id="0" link="56" affection="0" isEnd="false" itemCheck="0">Of course! I had a great time too!</option>
+		</options>
+	</dialog>
+	<dialog id="56" charName="Hikae" place="date2">
+		<text>Ok, let's head out then!</text>
+		<options>
+			<option id="0" link="57" affection="25" isEnd="true" itemCheck="0">Ok!</option>
+			<option id="1" link="55" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>
 </scenario>
