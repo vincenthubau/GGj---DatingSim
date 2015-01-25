@@ -355,8 +355,55 @@
 	<dialog id="56" charName="Hikae" place="date2">
 		<text>Ok, let's head out then!</text>
 		<options>
-			<option id="0" link="56" affection="25" isEnd="true" itemCheck="0">Ok!</option>
+			<option id="0" link="57" affection="25" isEnd="true" itemCheck="0">Ok!</option>
 		</options>
 	</dialog>
-	
+	<dialog id="57" charName="Hikae" place="school">
+		<text>Hi again, I'm so happy to see you!</text>
+		<options>
+			<option id="0" link="58" affection="0" isEnd="false" itemCheck="0">I'm happy to see you too, Hikae!</option>
+		</options>
+	</dialog>
+	<dialog id="58" charName="Hikae" place="school">
+		<text>So I, uh...*I really like you a lot...*I'd like to take you somewhere very special...</text>
+		<options>
+			<option id="0" link="59" affection="0" isEnd="false" itemCheck="0">Oh, Hikae! I've been waiting for you to say those words... Of course I'll come with you!</option>
+		</options>
+	</dialog>
+	<dialog id="59" charName="Hikae" place="school">
+		<text>Really?! I'm so happy that I feel like I'm floating high above the ground!</text>
+		<options>
+			<option id="0" link="60" affection="0" isEnd="false" itemCheck="0">Uh... Me too actually...</option>
+		</options>
+	</dialog>
+	<dialog id="60" charName="Hikae" place="school">
+		<text>Wha-what's happening?</text>
+		<options>
+			<option id="0" link="61" affection="0" isEnd="false" itemCheck="0">I don't know!</option>
+		</options>
+	</dialog>
+	<dialog id="61" charName="Me" place="date3">
+		<text>Wha??!?!! How did we end up here?!</text>
+		<options>
+			<option id="0" link="62" affection="0" isEnd="false" itemCheck="0">I... I don't know... One moment I felt like I was about to burst with happiness, and next thing I knew I was seeing stars!</option>
+		</options>
+	</dialog>
+	<dialog id="62" charName="Hikae" place="date3">
+		<text>It's very beautiful here though, isn't it?</text>
+		<options>
+			<option id="0" link="63" affection="0" isEnd="false" itemCheck="0">I don't know how we ended up here nor how we're breathing in space, but I say we make the best of it.</option>
+		</options>
+	</dialog>
+	<dialog id="63" charName="Hikae" place="date3">
+		<text>Visiting space has always been my dream. I'm happy I'm here with you.</text>
+		<options>
+			<option id="0" link="64" affection="0" isEnd="false" itemCheck="0">Me too... Here, your glasses are falling off... Let me help you...</option>
+		</options>
+	</dialog>
+	<dialog id="64" charName="Hikae" place="date3">
+		<text>Oh, what are you doing...? Oh...</text>
+		<options>
+			<option id="0" link="64" affection="0" isEnd="false" itemCheck="0">Shh, let's just enjoy ourselves...</option>
+		</options>
+	</dialog>
 </scenario>
