@@ -13,14 +13,14 @@ public class PauseManager : MonoBehaviour {
 
 	void PauseGame(){
 		if(paused){
-			pauseCanvas.SetActive(false);
+			pauseObject.SetActive(false);
 			Time.timeScale = 1;
 			paused = false;
 		}
 		else{
 			Time.timeScale = 0;
 			paused = true;
-			pauseCanvas.SetActive(true);
+			pauseObject.SetActive(true);
 		}
 	}
 
