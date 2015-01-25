@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
 	public float pushPower = 2.0F;
 	public float kickStrength = 1.0F;
 	public float colliderDistance = 1.2F;
+	public AudioClip[] ballKickAudio;
+
 	private Vector3 moveDirection = Vector3.zero;
 	private bool isCollided = false;
 
@@ -92,6 +94,10 @@ public class Player : MonoBehaviour {
 		else
 			pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 		body.velocity += pushDir * pushPower;
+		if(hit.collider.tag == "Ball" && !audio.isPlaying){
+			audio.clip = ballKickAudio[Random.Range(0,ballKickAudio.Length)];
+			audio.Play();
+		}
 	}
 
 	public void SetDisableMoveFalse(){
