@@ -107,7 +107,7 @@
 		<options>
 			<option id="0" link="17" affection="5" isEnd="false" itemCheck="0">La Classique - regular poutine</option>
 			<option id="1" link="18" affection="3" isEnd="false" itemCheck="0">La Rachel - poutine with bell pepper, mushrooms, and onion</option>
-			<option id="2" link="19" affection="0" isEnd="false" itemCheck="0">L'Obélix - smoked meat poutine</option>
+			<option id="2" link="19" affection="0" isEnd="false" itemCheck="0">L'Obꭩx - smoked meat poutine</option>
 		</options>
 	</dialog> 
 	<dialog id="17" charName="Kengo" place="date1">
@@ -175,25 +175,32 @@
 	<dialog id="27" charName="Kengo" place="date1">
 		<text>Yeah...</text>
 		<options>
-			<option id="0" link="30" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="28" charName="Kengo" place="date1">
 		<text>They're making big conclusions about what I can do just based on the way I look.</text>
 		<options>
-			<option id="1" link="30" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="1" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="29" charName="Kengo" place="date1">
 		<text>You too? Well, I do just fine...</text>
 		<options>
-			<option id="2" link="30" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="2" link="30" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="30" charName="Kengo" place="date1">
 		<text>I'd like to just let haters be haters, but I wish I didn't have to hear comments like that when I'm having a good time.*I already run into prejudice in hockey constantly. People doubting whether I'm able to do what humans can do because I have a different body structure.*Sometimes it's very frustrating.</text>
 		<options>
-			<option id="0" link="2" affection="25" isEnd="true" itemCheck="0">Let's go for a walk before heading home, maybe that will pick up your mood!</option>
+			<option id="0" link="31" affection="0" isEnd="false" itemCheck="0">Let's go for a walk before heading home, maybe that will pick up your mood!</option>
+		</options>
+	</dialog>
+	<dialog id="31" charName="Kengo" place="date1">
+		<text>Ok!</text>
+		<options>
+			<option id="0" link="32" affection="25" isEnd="true" itemCheck="0">Let's go!</option>
+			<option id="1" link="30" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>
 </scenario>

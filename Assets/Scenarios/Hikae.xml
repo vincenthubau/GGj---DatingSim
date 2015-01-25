@@ -195,32 +195,32 @@
 	<dialog id="30" charName="Hikae" place="date1">
 		<text>You will? That makes me very happy! I can't wait!</text>
 		<options>
-			<option id="0" link="33" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="33" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="31" charName="Hikae" place="date1">
 		<text>I would enjoy that, yes!</text>
 		<options>
-			<option id="0" link="33" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="33" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="32" charName="Hikae" place="date1">
 		<text>I'm sorry, I didn't mean to imply anything like that!</text>
 		<options>
-			<option id="0" link="33" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="33" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="33" charName="Hikae" place="date1">
 		<text>Well, I think it's time to head back. I had a great time!</text>
 		<options>
-			<option id="0" link="34" affection="25" isEnd="false" itemCheck="0">Me too!</option>
+			<option id="0" link="34" affection="0" isEnd="false" itemCheck="0">Me too!</option>
 		</options>
 	</dialog>
 	<dialog id="34" charName="Hikae" place="date1">
 		<text>Ok, bye!</text>
 		<options>
-			<option id="0" link="34" affection="25" isEnd="false" itemCheck="0">Not yet.</option>
-			<option id="1" link="34" affection="0" isEnd="true" itemCheck="0">Bye!</option>
+			<option id="0" link="35" affection="25" isEnd="true" itemCheck="0">Bye!</option>
+			<option id="1" link="25" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>
 </scenario>
