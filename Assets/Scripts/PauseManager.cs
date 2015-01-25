@@ -11,7 +11,7 @@ public class PauseManager : MonoBehaviour {
 		}
 	}
 
-	void PauseGame(){
+	public void PauseGame(){
 		if(paused){
 			pauseObject.SetActive(false);
 			Time.timeScale = 1;
