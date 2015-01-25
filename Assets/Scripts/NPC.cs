@@ -8,7 +8,7 @@ public class NPC : MonoBehaviour {
 	public Slider affectionSlider;
 	//4 Sprites : Neutral, happy, sad and angry
 	public Sprite[] characterExpressions;
-	//3 SPrites : Date1, Date2, Date3
+	//3 Sprites : Date1, Date2, Date3
 	public Sprite[] backgroundImages;
 	public string name
 	{

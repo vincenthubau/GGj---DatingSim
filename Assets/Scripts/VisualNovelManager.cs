@@ -37,8 +37,15 @@ public class VisualNovelManager : MonoBehaviour {
 		//A Dialog doesn't begin with options
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
+		interactText.GetComponent<Text>().text = "";
 
-		npcObject.affectionSlider = gameObject.GetComponentInChildren<Slider>();
+		if(npcObject.affectionSlider != null){
+			gameObject.GetComponentInChildren<Slider>().enabled = true;
+			npcObject.affectionSlider = gameObject.GetComponentInChildren<Slider>();
+		}
+		else{
+			gameObject.GetComponentInChildren<Slider>().enabled = false;
+		}
 
 		//Load Dialog of the NPC
 		npcId = npcObject.name;
@@ -48,10 +55,15 @@ public class VisualNovelManager : MonoBehaviour {
 
 		//Should we change the backgroundImage? Let's check
 		SetBackgroundImage(dial);
-		interactText.SetActive(false);
 
 		//Load Character
-		npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		if(npcObject.characterExpressions.Length >0){
+			npcImage.SetActive(true);
+			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		}
+		else{
+			npcImage.SetActive(false);
+		}
 		npcNameText.GetComponent<Text>().text = dial.CharacterName;
 
 		//Parse the string
@@ -176,8 +188,16 @@ public class VisualNovelManager : MonoBehaviour {
 	//Each button has it's own call
 	//Every position is set to have a kind of effect
 	public void OnClickButton1(){
+		/*
+		if(optionList.ItemCheck!=0){
+			CheckItemTrue(optionList.ItemCheck);
+		}
+		*/
+
 		//We reset the expression so the NPC doesn't stay in a certain mood
-		npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		if(npcObject.characterExpressions.Length > 0){
+			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		}
 		//If we need to add affection, then we might change the characterExpression too
 		if(optionList[0].AffectionValue != 0){
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[1];
@@ -192,6 +212,7 @@ public class VisualNovelManager : MonoBehaviour {
 			npcObject.dialogId = dial.getNextDialogId(0);
 			//We give back the power to move to the player
 			player.SetDisableMoveFalse();
+			interactText.GetComponent<Text>().text = "Press 'Action' to interact";
 			//And we hide the Canvas
 			gameObject.SetActive(false);
 		}
@@ -205,7 +226,9 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//See OnClickButton1()
 	public void OnClickButton2(){
-		npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		if(npcObject.characterExpressions.Length > 0){
+			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		}
 		if(optionList[1].AffectionValue != 0){
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[2];
 			if(npcObject.affection < 100f){
@@ -216,6 +239,7 @@ public class VisualNovelManager : MonoBehaviour {
 		if(optionList[1].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(1);
 			player.SetDisableMoveFalse();
+			interactText.GetComponent<Text>().text = "Press 'Action' to interact";
 			gameObject.SetActive(false);
 		}
 		else{
@@ -226,7 +250,9 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//See OnClickButton1()
 	public void OnClickButton3(){
-		npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		if(npcObject.characterExpressions.Length > 0){
+			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
+		}
 		if(optionList[2].AffectionValue != 0){
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[3];
 			if(npcObject.affection < 100f){
@@ -237,6 +263,7 @@ public class VisualNovelManager : MonoBehaviour {
 		if(optionList[2].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(2);
 			player.SetDisableMoveFalse();
+			interactText.GetComponent<Text>().text = "Press 'Action' to interact";
 			gameObject.SetActive(false);
 		}
 		else{
@@ -244,5 +271,18 @@ public class VisualNovelManager : MonoBehaviour {
 			NextDialog(dial);
 		}
 	}
+
+	//Check if the player has the item set to true;
+	/*
+	void CheckItemTrue(int itemNumber){
+		//GetItem(itemNumber);
+		if(npcObject.name == "bench"){
+			player.SetItem(itemNumber);
+		}
+		if( !player.GetItem(itemNumber) ){
+			optionList[0].IsEnd = true;
+		}
+	}
+	 */
 }
 

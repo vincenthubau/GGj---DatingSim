@@ -34,14 +34,14 @@
 		<options>
 			<option id="0" affection="0" link="6" itemCheck="0" isEnd="false">Well I'm happy I didn't sit on you then.</option>
 			<option id="1" affection="0" link="7" itemCheck="0" isEnd="false">Are you a plastic surgeon?</option>
-			<option id="2" affection="0" link="4" itemCheck="2" isEnd="true">I'm going to kick your ass!</option>
+			<option id="2" affection="0" link="4" itemCheck="0" isEnd="true">I'm going to kick your ass!</option>
 		</options>
 	</dialog>
 	<dialog id="5" charName="bench" place="school">
 		<text>You $@!%! piece of !$?@ @$?@! lover who like @$?@?! I'll $!$?% your !$?@@ face you $@?!.</text>
 		<options>
 			<option id="0" affection="0" link="6" itemCheck="0" isEnd="false">I'm sorry I didn't mean to offend you.</option>
-			<option id="1" affection="0" link="5" itemCheck="2" isEnd="true">Bring it on $@$?!</option>
+			<option id="1" affection="0" link="5" itemCheck="0" isEnd="true">Bring it on $@$?!</option>
 		</options>
 	</dialog>
 	<dialog id="6" charName="bench" place="school">
@@ -61,7 +61,7 @@
 	<dialog id="8" charName="bench" place="school">
 		<text>Where you think you're going punk!*You think you can just leave this place like that?*There is only two ways this can end!*With you being dead!*Or with you taking this amazing bottle of water from my cold dead bench parts!</text>
 		<options>
-			<option id="0" affection="0" link="8" itemCheck="2" isEnd="true">Fight!</option>
+			<option id="0" affection="0" link="8" itemCheck="0" isEnd="true">Fight!</option>
 		</options>
 	</dialog>
 </scenario>

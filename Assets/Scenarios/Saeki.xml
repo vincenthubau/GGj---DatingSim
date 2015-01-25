@@ -53,67 +53,67 @@
 	<dialog id="8" charName="Saeki" place="school">
 		<text>Anyway. I'm kind of bored. Would be nice to see someone do something really crazy with that ball over there.</text>
 		<options>
-			<option id="0" link="9" affection="0" isEnd="false" itemCheck="1">What do you think?</option>
+			<option id="0" link="9" affection="0" isEnd="false" itemCheck="2">What do you think?</option>
 			<option id="1" link="8" affection="0" isEnd="true" itemCheck="0">Let's see.</option>
 		</options>
 	</dialog>
 	<dialog id="9" charName="Saeki" place="school">
 		<text>Wow, that was pretty impressive! I guess you're not too bad.*I don't have anything to do tonight, you could keep me company if you want.</text>
 		<options>
-			<option id="0" link="10" affection="0" isEnd="false" itemCheck="1">/Suggest going to the movies?/</option>
+			<option id="0" link="10" affection="0" isEnd="false" itemCheck="0">/Suggest going to the movies?/</option>
 			<option id="1" link="9" affection="0" isEnd="true" itemCheck="0">Got to go</option>
 		</options>
 	</dialog>
 	<dialog id="10" charName="Saeki" place="school">
 		<text></text>
 		<options>
-			<option id="0" link="11" affection="0" isEnd="false" itemCheck="1">Yes.</option>
+			<option id="0" link="11" affection="0" isEnd="false" itemCheck="0">Yes.</option>
 			<option id="1" link="12" affection="0" isEnd="true" itemCheck="0">No.</option>
 		</options>
 	</dialog>
 	<dialog id="11" charName="Saeki" place="school">
 		<text>Yeah, I guess I could go see a movie. I'll pick what we watch though! I'll see you there in two hours.</text>
 		<options>
-			<option id="0" link="14" affection="0" isEnd="false" itemCheck="1">Ok, see you there!</option>
+			<option id="0" link="14" affection="0" isEnd="false" itemCheck="0">Ok, see you there!</option>
 		</options>
 	</dialog>
 	<dialog id="12" charName="Saeki" place="school">
 		<text>*Shrug* Nevermind then.</text>
 		<options>
-			<option id="0" link="13" affection="0" isEnd="false" itemCheck="1">...</option>
+			<option id="0" link="13" affection="0" isEnd="false" itemCheck="0">...</option>
 		</options>
 	</dialog>
 	<dialog id="13" charName="Saeki" place="school">
 		<text>Oh, you came back? You want to go out after all?</text>
 		<options>
-			<option id="0" link="14" affection="0" isEnd="false" itemCheck="1">Yes.</option>
-			<option id="1" link="13" affection="0" isEnd="true" itemCheck="1">No.</option>
+			<option id="0" link="14" affection="0" isEnd="false" itemCheck="0">Yes.</option>
+			<option id="1" link="13" affection="0" isEnd="true" itemCheck="0">No.</option>
 		</options>
 	</dialog>
 	<dialog id="14" charName="Saeki" place="date1">
 		<text>Hey.</text>
 		<options>
-			<option id="0" link="15" affection="0" isEnd="false" itemCheck="1">Hi!</option>
+			<option id="0" link="15" affection="0" isEnd="false" itemCheck="0">Hi!</option>
 		</options>
 	</dialog>
 	<dialog id="15" charName="Saeki" place="date1">
 		<text>So I picked a drama movie about the struggles of an entrepreneur and her family.*Seemed like the type of thing you'd want to see.</text>
 		<options>
-			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">Huh, ok?</option>
+			<option id="0" link="16" affection="0" isEnd="false" itemCheck="0">Huh, ok?</option>
 		</options>
 	</dialog>
 	<dialog id="16" charName="Me" place="date1">
 		<text>Oh, I think it's starting! We should go in!</text>
 		<options>
-			<option id="0" link="17" affection="0" isEnd="false" itemCheck="1">Ok.</option>
+			<option id="0" link="17" affection="0" isEnd="false" itemCheck="0">Ok.</option>
 		</options>
 	</dialog>
 	<dialog id="17" charName="Me" place="date1">
 		<text>I think the movie was very</text>
 		<options>
-			<option id="0" link="18" affection="5" isEnd="false" itemCheck="0">touching.</option>
-			<option id="1" link="19" affection="3" isEnd="false" itemCheck="0">interesting.</option>
-			<option id="2" link="20" affection="0" isEnd="false" itemCheck="0">boring! I thought I was going to die of boredom!</option>
+			<option id="0" link="18" affection="5" isEnd="false" itemCheck="0">Touching.</option>
+			<option id="1" link="19" affection="3" isEnd="false" itemCheck="0">Interesting.</option>
+			<option id="2" link="20" affection="0" isEnd="false" itemCheck="0">Boring! I thought I was going to die of boredom!</option>
 		</options>
 	</dialog>
 	<dialog id="18" charName="Saeki" place="date1">
@@ -137,69 +137,69 @@
 	<dialog id="21" charName="Me" place="date1">
 		<text>You seemed pretty touched by it though.</text>
 		<options>
-			<option id="0" link="22" affection="0" isEnd="false" itemCheck="1">Not really.</option>
+			<option id="0" link="22" affection="0" isEnd="false" itemCheck="0">Not really.</option>
 		</options>
 	</dialog>
 	<dialog id="22" charName="Me" place="date1">
 		<text>Are you sure?</text>
 		<options>
-			<option id="0" link="23" affection="0" isEnd="false" itemCheck="1">Of course I'm sure! Jeez!</option>
+			<option id="0" link="23" affection="0" isEnd="false" itemCheck="0">Of course I'm sure! Jeez!</option>
 		</options>
 	</dialog>
 	<dialog id="23" charName="Saeki" place="date1">
 		<text>...*Well actually...*It reminds me of my own destiny a bit.*After I graduate, I will have to move far away.</text>
 		<options>
-			<option id="0" link="24" affection="0" isEnd="false" itemCheck="1">You have to take over a family business or something like that?</option>
+			<option id="0" link="24" affection="0" isEnd="false" itemCheck="0">You have to take over a family business or something like that?</option>
 		</options>
 	</dialog>
 	<dialog id="24" charName="Saeki" place="date1">
 		<text>Something like that, yeah...</text>
 		<options>
-			<option id="0" link="25" affection="0" isEnd="false" itemCheck="1">--></option>
+			<option id="0" link="25" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="25" charName="Me" place="date1">
 		<text>Hmm. </text>
 		<options>
-			<option id="0" link="26" affection="5" isEnd="false" itemCheck="1">You seem worried about it.</option>
-			<option id="1" link="27" affection="3" isEnd="false" itemCheck="1">I guess you don't really have a choice.</option>
-			<option id="2" link="28" affection="0" isEnd="false" itemCheck="1">You're lucky you know, having a clear future waiting for you.</option>
+			<option id="0" link="26" affection="5" isEnd="false" itemCheck="0">You seem worried about it.</option>
+			<option id="1" link="27" affection="3" isEnd="false" itemCheck="0">I guess you don't really have a choice.</option>
+			<option id="2" link="28" affection="0" isEnd="false" itemCheck="0">You're lucky you know, having a clear future waiting for you.</option>
 		</options>
 	</dialog>
 	<dialog id="26" charName="Saeki" place="date1">
 		<text>It's not what I want to do at all... I've always wanted to be an artist - a musician. I've practiced singing all my life.</text>
 		<options>
-			<option id="0" link="29" affection="0" isEnd="false" itemCheck="1">--></option>
+			<option id="0" link="29" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="27" charName="Saeki" place="date1">
 		<text>I do feel like that... All I've ever wanted is to be a singer, but it seems like a childish dream now.</text>
 		<options>
-			<option id="0" link="29" affection="0" isEnd="false" itemCheck="1">--></option>
+			<option id="0" link="29" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="28" charName="Saeki" place="date1">
 		<text>That's what everyone keeps saying! I don't feel lucky at all! I've always wanted to be a singer but everyone keeps telling me it's a stupid dream...</text>
 		<options>
-			<option id="0" link="29" affection="0" isEnd="false" itemCheck="1">--></option>
+			<option id="0" link="29" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="29" charName="Me" place="date1">
 		<text>I think it's a great dream! You could definitely become an idol!</text>
 		<options>
-			<option id="0" link="30" affection="0" isEnd="false" itemCheck="1">You think so?!</option>
+			<option id="0" link="30" affection="0" isEnd="false" itemCheck="0">You think so?!</option>
 		</options>
 	</dialog>
 	<dialog id="30" charName="Me" place="date1">
 		<text>Of course!</text>
 		<options>
-			<option id="0" link="31" affection="0" isEnd="false" itemCheck="1">--></option>
+			<option id="0" link="31" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="31" charName="Saeki" place="date1">
 		<text>I need to run to the metro now... We should do this again, I had a great time.</text>
 		<options>
-			<option id="0" link="32" affection="25" isEnd="true" itemCheck="1">Me too! See you at school!</option>
+			<option id="0" link="32" affection="25" isEnd="true" itemCheck="0">Me too! See you at school!</option>
 		</options>
 	</dialog>
 </scenario>
