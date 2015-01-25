@@ -232,7 +232,7 @@ public class VisualNovelManager : MonoBehaviour {
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[1];
 			//We add the afection only if it isn't a hundred
 			if(npcObject.affection < 100f){
-				npcObject.AddAffection(optionList[1].AffectionValue);
+				npcObject.AddAffection(optionList[0].AffectionValue);
 			}
 		}
 		//If this option lead to a return to the HUD
@@ -285,7 +285,7 @@ public class VisualNovelManager : MonoBehaviour {
 		if(optionList[2].AffectionValue != 0){
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[3];
 			if(npcObject.affection < 100f){
-				npcObject.AddAffection(optionList[1].AffectionValue);
+				npcObject.AddAffection(optionList[2].AffectionValue);
 			}
 		}
 

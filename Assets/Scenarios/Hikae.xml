@@ -181,7 +181,7 @@
 	<dialog id="28" charName="Hikae" place="date1">
 		<text>Oh, no no! I'm not unhappy with my life! Living in a science class at a university, what more could a geeky plant like me want?*...I would like to see the world a bit more though.</text>
 		<options>
-			<option id="0" link="28" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="29" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="29" charName="Me" place="date1">
@@ -213,14 +213,14 @@
 	<dialog id="33" charName="Hikae" place="date1">
 		<text>Well, I think it's time to head back. I had a great time!</text>
 		<options>
-			<option id="0" link="34" affection="25" isEnd="true" itemCheck="0">Me too!</option>
+			<option id="0" link="34" affection="25" isEnd="false" itemCheck="0">Me too!</option>
 		</options>
 	</dialog>
 	<dialog id="34" charName="Hikae" place="date1">
 		<text>Ok, bye!</text>
 		<options>
-			<option id="0" link="35" affection="25" isEnd="true" itemCheck="0">Bye!</option>
-			<option id="1" link="25" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
+			<option id="0" link="34" affection="25" isEnd="false" itemCheck="0">Not yet.</option>
+			<option id="1" link="34" affection="0" isEnd="true" itemCheck="0">Bye!</option>
 		</options>
 	</dialog>
 </scenario>
