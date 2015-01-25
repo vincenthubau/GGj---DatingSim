@@ -220,7 +220,6 @@
 		<text>Ok, bye!</text>
 		<options>
 			<option id="0" link="35" affection="25" isEnd="true" itemCheck="0">Bye!</option>
-			<option id="1" link="33" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>
 	<dialog id="35" charName="Me" place="school">
@@ -357,7 +356,7 @@
 		<text>Ok, let's head out then!</text>
 		<options>
 			<option id="0" link="56" affection="25" isEnd="true" itemCheck="0">Ok!</option>
-			<option id="1" link="55" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>
+	
 </scenario>
