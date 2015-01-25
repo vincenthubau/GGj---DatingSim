@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class RedBall : MonoBehaviour {
-	public string RedBallKickEvent;
-	
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -15,6 +14,5 @@ public class RedBall : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision hit) {
-		Invoke("PlayRedBallKick", 0);
 	}
 }
