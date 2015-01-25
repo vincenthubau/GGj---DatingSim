@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 /// <summary>
@@ -9,9 +10,16 @@ using System.Collections;
 public class Controller : MonoBehaviour
 {
 	public GameObject creditsImage;
+	public Sprite[] backgroundMenus;
+	public GameObject menuGameObject;
 	// Use this for initialization
 	void Start ()
     {
+		int number;
+		number = (int)Random.Range(0.0f, 3.0f);
+
+		menuGameObject.GetComponent<Image>().sprite = backgroundMenus[number];
+
 		creditsImage.SetActive(false);
         //Debug.Log("MENU");
 
