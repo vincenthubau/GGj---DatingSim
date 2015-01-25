@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{710F61E5-C0D9-4F12-A0EA-F5C982DCF4B1}" SchemaVersion="69">
+	<Events>
+		<WorkUnit Name="WU_GameJam_TokidokiLove" ID="{710F61E5-C0D9-4F12-A0EA-F5C982DCF4B1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Sfx_Footsteps" ID="{57984075-81CE-4819-B4AB-64851B2E5D7F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3FAC01C5-9064-4FE1-8045-FB2A73DC239E}" ShortID="587111083" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A885616B-ACEB-4938-B362-F98881A4BF9A}" Global="false">
+									<ObjectRef Name="Sfx_Footsteps" ID="{DFCEF883-5575-4378-8871-1ABEDA072AE1}" WorkUnitID="{2BE0D9F7-246F-4CB6-982B-951BC770DA61}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Amb_General" ID="{BBF712DD-AA2C-4C4F-8D13-E6F3045B0F5D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{85F4776A-21ED-4E68-8078-34CF987C0868}" ShortID="519241690" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B37289FF-F329-4E22-BFF4-F8D05E40A69B}" Global="false">
+									<ObjectRef Name="Amb_General" ID="{A23E210E-8358-41A9-88FD-834951D40A0C}" WorkUnitID="{2BE0D9F7-246F-4CB6-982B-951BC770DA61}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Person" ID="{12E7C278-5C33-4AC1-8010-EA1C261E29E2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8196DEDC-47A2-4881-B92E-F842B15F3FF9}" ShortID="111448018" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{27C8D9D9-F687-47ED-8868-EF3EBB9997AF}" Global="false">
+									<ObjectRef Name="Music_Person" ID="{D3248360-5DD7-4749-93E8-A10DF8A0E8A4}" WorkUnitID="{2BE0D9F7-246F-4CB6-982B-951BC770DA61}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
