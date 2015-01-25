@@ -9,12 +9,6 @@ public class RedBall : MonoBehaviour {
 	{
 	}
 	
-	void PlayRedBallKick ()
-	{
-		AkSoundEngine.SetSwitch("Rayman_SW_Footsteps","Wood",gameObject);
-		AkSoundEngine.PostEvent(RedBallKickEvent, gameObject);
-	}
-	
 	// Update is called once per frame
 	void Update () 
 	{
