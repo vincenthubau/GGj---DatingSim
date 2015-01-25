@@ -33,7 +33,9 @@ public class VisualNovelManager : MonoBehaviour {
 	//Trying to slow down the text printing (DOESN'T WORK)
 	bool canPrint = false;
 
-	void Start(){
+	void Start(){ }
+
+	void Init() {
 		//A Dialog doesn't begin with options
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
@@ -48,8 +50,6 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 
 		//Load Dialog of the NPC
-		Debug.Log(npcObject.name);
-		Debug.Log(npcObject.dialogId);
 		npcId = npcObject.name;
 		dialogId = npcObject.dialogId;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
@@ -130,8 +130,6 @@ public class VisualNovelManager : MonoBehaviour {
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
 
-		npcId = npcObject.name;
-		dialogId = npcObject.dialogId; 
 		//Change the background?
 		SetBackgroundImage(d);
 
@@ -151,6 +149,7 @@ public class VisualNovelManager : MonoBehaviour {
 	//Change the value of npcObject
 	public void SetNPC(NPC npc){
 		npcObject = npc;
+		Init();
 	}
 
 	//Prints phrase letter by letter
@@ -207,7 +206,7 @@ public class VisualNovelManager : MonoBehaviour {
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[1];
 			//We add the afection only if it isn't a hundred
 			if(npcObject.affection < 100f){
-				npcObject.AddAffection(optionList[0].AffectionValue);
+				npcObject.AddAffection(optionList[1].AffectionValue);
 			}
 		}
 		//If this option lead to a return to the HUD
@@ -269,11 +268,32 @@ public class VisualNovelManager : MonoBehaviour {
 			player.SetDisableMoveFalse();
 			interactText.GetComponent<Text>().text = "Press 'Action' to interact";
 			gameObject.SetActive(false);
+			if(optionList[2].ItemCheck > 0)
+			{
+
+			}
 		}
 		else{
 			dial = DialogManager.getNextDialog( npcId, dial.getNextDialogId(2) );
 			NextDialog(dial);
 		}
+	}
+
+	void reactToDialogue(Option op, NPC npc) {
+		if(npc.name == "bench") {
+			if(op.ItemCheck == 1) {
+				//Receive water bottle
+				player.objectives[0] = true;
+			}
+			else if(op.ItemCheck == 2) {
+				//Fight
+
+			}
+		}
+		//else if(npc.name == "") {
+		//}
+		//else if(npc.name == "") {
+		//}
 	}
 
 	//Check if the player has the item set to true;

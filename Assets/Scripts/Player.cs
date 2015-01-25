@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	public float ballKickStrength = 1.0F;
 	public float benchKickStrength = 5.0F;
 	public float colliderDistance = 1.2F;
+	public bool[] objectives;
 //	public AudioClip[] ballKickAudio;
 
 	private Vector3 moveDirection = Vector3.zero;
@@ -45,7 +46,6 @@ public class Player : MonoBehaviour {
 					if(!isCollided) {
 						isCollided = true;
 						npc = hit.collider.transform.gameObject.GetComponent<NPC>();
-						Debug.Log(npc.name);
 						interactText.SetActive(true);
 					}
 				}
