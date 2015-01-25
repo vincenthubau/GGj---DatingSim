@@ -21,8 +21,8 @@
 	<dialog id="3" charName="Kengo" place="school">
 		<text>--></text>
 		<options>
-			<option id="0" link="4" affection="0" isEnd="false" itemCheck="0">You'll definitely make it far, you seem very athletic and strong!</option>
-			<option id="1" link="5" affection="0" isEnd="false" itemCheck="0">I hope you'll do great in ice hockey.</option>
+			<option id="0" link="4" affection="5" isEnd="false" itemCheck="0">You'll definitely make it far, you seem very athletic and strong!</option>
+			<option id="1" link="5" affection="3" isEnd="false" itemCheck="0">I hope you'll do great in ice hockey.</option>
 			<option id="2" link="6" affection="0" isEnd="false" itemCheck="0">But you're a moose...</option>
 		</options>
 	</dialog>
@@ -54,7 +54,7 @@
 	<dialog id="8" charName="Kengo" place="school">
 		<text>I hope he goes away before he does anything bad...</text>
 		<options>
-			<option id="0" link="9" affection="0" isEnd="false" itemCheck="1">He's gone.</option>
+			<option id="0" link="9" affection="10" isEnd="false" itemCheck="1">He's gone.</option>
 			<option id="1" link="8" affection="0" isEnd="true" itemCheck="0"> Welp, he is still here.</option>
 		</options>
 	</dialog>
@@ -68,7 +68,7 @@
 	<dialog id="10" charName="Kengo" place="school">
 		<text>So, what do we do now ?</text>
 		<options>
-			<option id="0" link="11" affection="0" isEnd="false" itemCheck="1">Let's go to La Banquise! I've been craving poutine recently!</option>
+			<option id="0" link="11" affection="0" isEnd="false" itemCheck="1">Let's go to La Banquise! I've been craving poutine!</option>
 		</options>
 	</dialog>
 	<dialog id="11" charName="Kengo" place="school">
@@ -86,14 +86,114 @@
 	<dialog id="13" charName="Kengo" place="school">
 		<text>Hey, feel like going out yet?</text>
 		<options>
-			<option id="0" link="14" affection="0" isEnd="false" itemCheck="1">Yes.</option>
-			<option id="1" link="13" affection="0" isEnd="true" itemCheck="1">No.</option>
+			<option id="0" link="14" affection="0" isEnd="false" itemCheck="1">I do!</option>
+			<option id="1" link="13" affection="0" isEnd="true" itemCheck="1">Not yet.</option>
 		</options>
 	</dialog>
-	<dialog id="14" charName="Kengo" place="banquise">
-		<text>Banquise1</text>
+	<dialog id="14" charName="Kengo" place="date1">
+		<text>Hey! I'm happy you made it!</text>
 		<options>
-			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">/Go/</option>
+			<option id="0" link="15" affection="0" isEnd="false" itemCheck="1">Of course!</option>
+		</options>
+	</dialog>
+	<dialog id="15" charName="Kengo" place="date1">
+		<text>Tell me, what kind of poutine do you prefer?</text>
+		<options>
+			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">--></option>
+		</options>
+	</dialog>
+	<dialog id="16" charName="Me" place="date1">
+		<text>Well...</text>
+		<options>
+			<option id="0" link="17" affection="5" isEnd="false" itemCheck="1">La Classique - regular poutine</option>
+			<option id="1" link="18" affection="3" isEnd="false" itemCheck="1">La Rachel - poutine with bell pepper, mushrooms, and onion</option>
+			<option id="2" link="19" affection="0" isEnd="false" itemCheck="1">L'Obélix - smoked meat poutine</option>
+		</options>
+	</dialog> 
+	<dialog id="17" charName="Kengo" place="date1">
+		<text>Great choice! Nothing beats the classic one!</text>
+		<options>
+			<option id="0" link="20" affection="0" isEnd="true" itemCheck="1">--></option>
+		</options>
+	</dialog> 
+	<dialog id="18" charName="Kengo" place="date1">
+		<text>Yeah, I think I'll go with that one too. What can I say, I'm a herbivore, hehe!</text>
+		<options>
+			<option id="1" link="20" affection="0" isEnd="true" itemCheck="1">--></option>
+		</options>
+	</dialog> 
+	<dialog id="19" charName="Kengo" place="date1">
+		<text>Hmm, well it's your choice of course, but I hope you wouldn't order moose meat if that was available...</text>
+		<options>
+			<option id="2" link="20" affection="0" isEnd="true" itemCheck="1">--></option>
+		</options>
+	</dialog>
+	<dialog id="20" charName="Me" place="date1">
+		<text>Um, so what kind of things do you like doing?</text>
+		<options>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">Well, I'm not a very complex person!*I like sports a lot, both watching them and taking part myself.*I also really love nature! Hiking's one of my favorite things to do!</option>
+		</options>
+	</dialog>
+	<dialog id="21" charName="Me" place="date1">
+		<text>That sounds like a very healthy lifestyle!</text>
+		<options>
+			<option id="0" link="22" affection="0" isEnd="false" itemCheck="1">It just comes naturally to me! And I try to put in extra effort for my hockey career, of course.</option>
+		</options>
+	</dialog>
+	<dialog id="22" charName="Kengo" place="date1">
+		<text>Yesss, poutine arrived!</text>
+		<options>
+			<option id="0" link="23" affection="0" isEnd="false" itemCheck="1">Smells delicious!</option>
+		</options>
+	</dialog>
+	<dialog id="23" charName="Kengo" place="date1">
+		<text>Hmh...</text>
+		<options>
+			<option id="0" link="24" affection="0" isEnd="false" itemCheck="1">What is it?</option>
+		</options>
+	</dialog>
+	<dialog id="24" charName="Kengo" place="date1">
+		<text>See those people over there? I can hear them saying some pretty mean things about me.</text>
+		<options>
+			<option id="0" link="25" affection="0" isEnd="false" itemCheck="1">Like what?</option>
+		</options>
+	</dialog>
+	<dialog id="25" charName="Kengo" place="date1">
+		<text>Well, they're wondering whether I'll be able to eat poutine with such a big snout.*I guess they didn't take into account I might also have better hearing than humans do...</text>
+		<options>
+			<option id="0" link="26" affection="0" isEnd="false" itemCheck="1">--></option>
+		</options>
+	</dialog>
+	<dialog id="26" charName="Me" place="date1">
+		<text>That's</text>
+		<options>
+			<option id="0" link="27" affection="5" isEnd="false" itemCheck="1">pretty prejudiced of them!</option>
+			<option id="1" link="28" affection="3" isEnd="false" itemCheck="1">a pretty mean thing to say...</option>
+			<option id="2" link="29" affection="0" isEnd="false" itemCheck="1">something that I was wondering about too.</option>
+		</options>
+	</dialog> 
+	<dialog id="27" charName="Kengo" place="date1">
+		<text>Yeah...</text>
+		<options>
+			<option id="0" link="30" affection="0" isEnd="true" itemCheck="1">--></option>
+		</options>
+	</dialog> 
+	<dialog id="28" charName="Kengo" place="date1">
+		<text>They're making big conclusions about what I can do just based on the way I look.</text>
+		<options>
+			<option id="1" link="30" affection="0" isEnd="true" itemCheck="1">--></option>
+		</options>
+	</dialog> 
+	<dialog id="29" charName="Kengo" place="date1">
+		<text>You too? Well, I do just fine.</text>
+		<options>
+			<option id="2" link="30" affection="0" isEnd="true" itemCheck="1">--></option>
+		</options>
+	</dialog>
+	<dialog id="30" charName="Kengo" place="date1">
+		<text>I'd like to just let haters be haters, but I wish I didn't have to hear comments like that when I'm having a good time.*I already run into prejudice in hockey constantly. People doubting whether I'm able to do what humans can do because I have a different body structure.*Sometimes it's very frustrating.</text>
+		<options>
+			<option id="0" link="2" affection="25" isEnd="true" itemCheck="0">Let's go for a walk before heading home, maybe that will pick up your mood!</option>
 		</options>
 	</dialog>
 </scenario>
