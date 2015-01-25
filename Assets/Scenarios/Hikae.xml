@@ -34,8 +34,8 @@
 	<dialog id="5" charName="Me" place="school">
 		<text></text>
 		<options>
-			<option id="0" link="6" affection="0" isEnd="false" itemCheck="0">I would definitely have asked you!</option>
-			<option id="1" link="7" affection="0" isEnd="false" itemCheck="0">That's kind of mean of them.</option>
+			<option id="0" link="6" affection="5" isEnd="false" itemCheck="0">I would definitely have asked you!</option>
+			<option id="1" link="7" affection="3" isEnd="false" itemCheck="0">That's kind of mean of them.</option>
 			<option id="2" link="8" affection="0" isEnd="false" itemCheck="0">You ARE a plant after all.</option>
 		</options>
 	</dialog> 
@@ -61,153 +61,159 @@
 		<text>Uh, I'm starting to run out of energy... No-one's watered me for a while...</text>
 		<options>
 			<option id="0" link="10" affection="0" isEnd="false" itemCheck="1">Water Hikae.</option>
-			<option id="1" link="9" affection="0" isEnd="true" itemCheck="1">Go away.</option>
+			<option id="1" link="9" affection="0" isEnd="true" itemCheck="0">Go away.</option>
 		</options>
 	</dialog>
 	<dialog id="10" charName="Hikae" place="school">
 		<text>Ahhh, thank you! I'm feeling all refreshed!*You're really nice!</text>
 		<options>
-			<option id="0" link="11" affection="0" isEnd="false" itemCheck="0">Glad to see you're feeling better!</option>
+			<option id="0" link="11" affection="0" isEnd="false" itemCheck="1">Glad to see you're feeling better!</option>
 		</options>
 	</dialog>
 	<dialog id="11" charName="Hikae" place="school">
 		<text>Hey, um... Do you want to do something together?</text>
 		<options>
-			<option id="0" link="12" affection="0" isEnd="false" itemCheck="0">Together?</option>
+			<option id="0" link="12" affection="0" isEnd="false" itemCheck="1">Together?</option>
 		</options>
 	</dialog>
 	<dialog id="12" charName="Hikae" place="school">
 		<text>It's not a date or anything! I just, uh, well, I do like spending time with you...</text>
 		<options>
-			<option id="0" link="13" affection="0" isEnd="false" itemCheck="0">Go out with Hikae?</option>
-			<option id="1" link="15" affection="0" isEnd="true" itemCheck="0">Leave.</option>
+			<option id="0" link="13" affection="0" isEnd="false" itemCheck="1">Go out with Hikae?</option>
+			<option id="1" link="15" affection="0" isEnd="true" itemCheck="1">Leave.</option>
 		</options>
 	</dialog>
 	<dialog id="13" charName="Hikae" place="school">
 		<text>This makes me very happy! I'm sure we will have an enjoyable time!*So what do we do now?</text>
 		<options>
-			<option id="0" link="14" affection="0" isEnd="false" itemCheck="0">Well, it's nice weather so we could go walk around Mont-Royal?</option>
+			<option id="0" link="14" affection="0" isEnd="false" itemCheck="1">Well, it's nice weather so we could go walk around Mont-Royal?</option>
 		</options>
 	</dialog>
 	<dialog id="14" charName="Hikae" place="school">
 		<text>That sounds great! Let's go!</text>
 		<options>
-			<option id="0" link="16" affection="0" isEnd="false" itemCheck="0">/Go/</option>
+			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">/Go/</option>
 		</options>
 	</dialog>
 	<dialog id="15" charName="Hikae" place="school">
 		<text>You came back! Do you want to do something together?</text>
 		<options>
-			<option id="0" link="16" affection="0" isEnd="false" itemCheck="0">Yes</option>
-			<option id="1" link="15" affection="0" isEnd="true" itemCheck="0">No</option>
+			<option id="0" link="16" affection="0" isEnd="false" itemCheck="1">Yes</option>
+			<option id="1" link="15" affection="0" isEnd="true" itemCheck="1">No</option>
 		</options>
 	</dialog>
-	<dialog id="16" charName="Hikae" place="park">
+	<dialog id="16" charName="Hikae" place="date1">
 		<text>Ahhh! I've never been here before! The air is so fresh!</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog>
-	<dialog id="17" charName="Me" place="park">
+	<dialog id="17" charName="Me" place="date1">
 		<text></text>
 		<options>
-			<option id="0" link="18" affection="0" isEnd="false" itemCheck="0">Let's climb up to the Chalet du Mont Royal to get a view of the city!</option>
-			<option id="1" link="19" affection="0" isEnd="false" itemCheck="0">Let's walk around through the forest!</option>
-			<option id="2" link="20" affection="0" isEnd="false" itemCheck="0">Good, let's stay here then. I'm tired of carrying you around.</option>
+			<option id="0" link="18" affection="5" isEnd="false" itemCheck="1">Let's climb up to the Chalet du Mont Royal to get a view of the city!</option>
+			<option id="1" link="19" affection="3" isEnd="false" itemCheck="1">Let's walk around through the forest!</option>
+			<option id="2" link="20" affection="0" isEnd="false" itemCheck="1">Good, let's stay here then. I'm tired of carrying you around.</option>
 		</options>
 	</dialog> 
-	<dialog id="18" charName="Hikae" place="park">
+	<dialog id="18" charName="Hikae" place="date1">
 		<text>That would be amazing!</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog> 
-	<dialog id="19" charName="Hikae" place="park">
+	<dialog id="19" charName="Hikae" place="date1">
 		<text>That sounds great!</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog> 
-	<dialog id="20" charName="Hikae" place="park">
+	<dialog id="20" charName="Hikae" place="date1">
 		<text>Uh, ok... Sorry...</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog>
-	<dialog id="21" charName="Me" place="park">
+	<dialog id="21" charName="Me" place="date1">
 		<text>This is really nice...</text>
 		<options>
-			<option id="0" link="22" affection="0" isEnd="false" itemCheck="0">Yes, I'm enoying this!</option>
+			<option id="0" link="22" affection="0" isEnd="false" itemCheck="1">Yes, I'm enoying this!</option>
 		</options>
 	</dialog>
-	<dialog id="22" charName="Hikae" place="park">
+	<dialog id="22" charName="Hikae" place="date1">
 		<text>Oh no, the wind! *tumbles over*</text>
 		<options>
-			<option id="0" link="23" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="23" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog>
-	<dialog id="23" charName="Me" place="park">
+	<dialog id="23" charName="Me" place="date1">
 		<text></text>
 		<options>
-			<option id="0" link="24" affection="0" isEnd="false" itemCheck="0">You poor thing! Are you ok?</option>
-			<option id="1" link="25" affection="0" isEnd="false" itemCheck="0">Don't worry, I'll help you back up.</option>
-			<option id="2" link="26" affection="0" isEnd="false" itemCheck="0">Ugh, you're such a clutz... Here, I'll help you back up...</option>
+			<option id="0" link="24" affection="5" isEnd="false" itemCheck="1">You poor thing! Are you ok?</option>
+			<option id="1" link="25" affection="3" isEnd="false" itemCheck="1">Don't worry, I'll help you back up.</option>
+			<option id="2" link="26" affection="0" isEnd="false" itemCheck="1">Ugh, you're such a clutz... Here, I'll help you back up...</option>
 		</options>
 	</dialog> 
-	<dialog id="24" charName="Hikae" place="park">
+	<dialog id="24" charName="Hikae" place="date1">
 		<text>I am, I am! Sorry to be so much trouble, I'm so clumsy...</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog> 
-	<dialog id="25" charName="Hikae" place="park">
+	<dialog id="25" charName="Hikae" place="date1">
 		<text>Ahhh this is so embarassing... Thank you...</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog> 
-	<dialog id="26" charName="Hikae" place="park">
+	<dialog id="26" charName="Hikae" place="date1">
 		<text>I know, I'm sorry...</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="false" itemCheck="0">--></option>
+			<option id="0" link="21" affection="0" isEnd="false" itemCheck="1">--></option>
 		</options>
 	</dialog>
-	<dialog id="27" charName="Hikae" place="school">
+	<dialog id="27" charName="Hikae" place="date1">
 		<text>...*You know, being a plant is kind of limiting... Having to depend on others for everything, not being able to move anywhere on your own...*I'm glad you took me here.</text>
 		<options>
-			<option id="0" link="28" affection="0" isEnd="false" itemCheck="0">I'm sorry to hear that your life is so terrible...</option>
+			<option id="0" link="28" affection="0" isEnd="false" itemCheck="1">I'm sorry to hear that your life is so terrible...</option>
 		</options>
 	</dialog>
-	<dialog id="28" charName="Hikae" place="school">
+	<dialog id="28" charName="Hikae" place="date1">
 		<text>Oh, no no! I'm not unhappy with my life! Living in a science class at a university, what more could a geeky plant like me want?*...I would like to see the world a bit more though.</text>
 		<options>
 			<option id="0" link="28" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
-	<dialog id="29" charName="Me" place="park">
+	<dialog id="29" charName="Me" place="date1">
 		<text>Well...</text>
 		<options>
-			<option id="0" link="30" affection="0" isEnd="false" itemCheck="0">I promise I'll take you out again!</option>
-			<option id="1" link="31" affection="0" isEnd="false" itemCheck="0">We could go somewhere again if you want.</option>
-			<option id="2" link="32" affection="0" isEnd="false" itemCheck="0">I'm not going to be your babysitter...</option>
+			<option id="0" link="30" affection="5" isEnd="false" itemCheck="1">I promise I'll take you out again!</option>
+			<option id="1" link="31" affection="3" isEnd="false" itemCheck="1">We could go somewhere again if you want.</option>
+			<option id="2" link="32" affection="0" isEnd="false" itemCheck="1">I'm not going to be your babysitter...</option>
 		</options>
 	</dialog> 
-	<dialog id="30" charName="Hikae" place="park">
+	<dialog id="30" charName="Hikae" place="date1">
 		<text>You will? That makes me very happy! I can't wait!</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="33" affection="0" isEnd="true" itemCheck="1">--></option>
 		</options>
 	</dialog> 
-	<dialog id="31" charName="Hikae" place="park">
+	<dialog id="31" charName="Hikae" place="date1">
 		<text>I would enjoy that, yes!</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="33" affection="0" isEnd="true" itemCheck="1">--></option>
 		</options>
 	</dialog> 
-	<dialog id="32" charName="Hikae" place="park">
+	<dialog id="32" charName="Hikae" place="date1">
 		<text>I'm sorry, I didn't mean to imply anything like that!</text>
 		<options>
-			<option id="0" link="21" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="33" affection="0" isEnd="true" itemCheck="1">--></option>
 		</options>
 	</dialog>
+	<dialog id="25" charName="Hikae" place="date1">
+		<text>Well, I think it's time to head back. I had a great time!</text>
+		<options>
+			<option id="0" link="34" affection="25" isEnd="true" itemCheck="1">Me too!</option>
+		</options>
+	</dialog> 
 </scenario>
