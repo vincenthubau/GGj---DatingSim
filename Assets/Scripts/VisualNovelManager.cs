@@ -201,7 +201,8 @@ public class VisualNovelManager : MonoBehaviour {
 		if(npcObject.characterExpressions.Length > 0){
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
 		}
-		//If we need to add affection, then we might change the characterExpression too
+		//If we need to add affection, then we might change the characterExpression t
+
 		if(optionList[0].AffectionValue != 0){
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[1];
 			//We add the afection only if it isn't a hundred
