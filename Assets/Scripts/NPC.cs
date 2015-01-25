@@ -10,6 +10,8 @@ public class NPC : MonoBehaviour {
 	public Sprite[] characterExpressions;
 	//3 Sprites : Date1, Date2, Date3
 	public Sprite[] backgroundImages;
+	public AudioClip MusicAudio;
+	public AudioClip[] AmbiantAudio;
 	public string name
 	{
 		get {return m_name; }

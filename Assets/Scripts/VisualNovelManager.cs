@@ -17,6 +17,9 @@ public class VisualNovelManager : MonoBehaviour {
 	public GameObject playerButton3;
 	public NPC npcObject;
 	public Player player;
+	
+	public HubSoundStarter Hub_MusicScript;
+	public HubSoundStarter Hub_AmbiantScript;
 
 	//private
 	string m_string_text;
@@ -33,7 +36,8 @@ public class VisualNovelManager : MonoBehaviour {
 	//Trying to slow down the text printing (DOESN'T WORK)
 	bool canPrint = false;
 
-	void Start(){ }
+	void Start(){ 
+	}
 
 	void Init() {
 		//A Dialog doesn't begin with options
@@ -57,6 +61,10 @@ public class VisualNovelManager : MonoBehaviour {
 
 		//Should we change the backgroundImage? Let's check
 		SetBackgroundImage(dial);
+		Hub_MusicScript.hubSound = npcObject.MusicAudio;
+		Hub_MusicScript.StartSound();
+		SetAmbiant(dial);
+		Hub_AmbiantScript.StartSound();
 
 		//Load Character
 		if(npcObject.characterExpressions.Length >0){
@@ -132,6 +140,10 @@ public class VisualNovelManager : MonoBehaviour {
 
 		//Change the background?
 		SetBackgroundImage(d);
+		Hub_MusicScript.hubSound = npcObject.MusicAudio;
+		Hub_MusicScript.StartSound();
+		SetAmbiant(d);
+		Hub_AmbiantScript.StartSound();
 
 		//Set new texts
 		m_string_text = d.Text;
@@ -179,7 +191,20 @@ public class VisualNovelManager : MonoBehaviour {
 			default: break;
 			}
 		}
-
+	}
+	//Depending on the place contained in the Dialog, we set the correct ambiant sound for the character
+	void SetAmbiant(Dialog d){
+		if(d.Place != "school"){
+			switch(d.Place){
+			case "date1": Hub_AmbiantScript.hubSound = npcObject.AmbiantAudio[0];
+				break;
+			case "date2": Hub_AmbiantScript.hubSound = npcObject.AmbiantAudio[1];
+				break;
+			case "date3": Hub_AmbiantScript.hubSound = npcObject.AmbiantAudio[2];
+				break;
+			default: break;
+			}
+		}
 	}
 
 	//Wait for some time
@@ -271,7 +296,7 @@ public class VisualNovelManager : MonoBehaviour {
 			gameObject.SetActive(false);
 			if(optionList[2].ItemCheck > 0)
 			{
-
+				reactToDialogue(optionList[2], npcObject);
 			}
 		}
 		else{

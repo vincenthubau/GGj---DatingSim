@@ -10,7 +10,8 @@ public class Player : MonoBehaviour {
 	public float benchKickStrength = 5.0F;
 	public float colliderDistance = 1.2F;
 	public bool[] objectives;
-//	public AudioClip[] ballKickAudio;
+	public AudioClip[] ballKickAudio;
+	public AudioClip[] stepsAudio;
 
 	private Vector3 moveDirection = Vector3.zero;
 	private bool isCollided = false;
@@ -24,6 +25,15 @@ public class Player : MonoBehaviour {
 
 	void Update() {
 		CharacterController controller = GetComponent<CharacterController>();
+		
+		if(Input.GetKey(KeyCode.UpArrow) && !audio.isPlaying){
+			audio.clip = stepsAudio[Random.Range(0,stepsAudio.Length)];
+			audio.Play();
+		}
+		if(Input.GetKey(KeyCode.DownArrow) && !audio.isPlaying){
+			audio.clip = stepsAudio[Random.Range(0,stepsAudio.Length)];
+			audio.Play();
+		}
 		//Feed moveDirection with input.
 		if(!disableMove){
 
@@ -101,10 +111,10 @@ public class Player : MonoBehaviour {
 		else
 			pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 		body.velocity += pushDir * pushPower;
-//		if(hit.collider.tag == "Ball" && !audio.isPlaying){
-//			audio.clip = ballKickAudio[Random.Range(0,ballKickAudio.Length)];
-//			audio.Play();
-//		}
+		if(hit.collider.tag == "Ball"){
+			audio.clip = ballKickAudio[Random.Range(0,ballKickAudio.Length)];
+			audio.Play();
+		}
 	}
 
 	public void SetDisableMoveFalse(){

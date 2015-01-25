@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class RedBall : MonoBehaviour {
+	public AudioClip[] ballAudio;
 
 	// Use this for initialization
 	void Start () 
@@ -14,5 +15,7 @@ public class RedBall : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision hit) {
+		audio.clip = ballAudio[Random.Range(0,ballAudio.Length)];
+		audio.Play();
 	}
 }
