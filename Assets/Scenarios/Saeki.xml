@@ -202,4 +202,11 @@
 			<option id="0" link="32" affection="25" isEnd="true" itemCheck="0">Me too! See you at school!</option>
 		</options>
 	</dialog>
+	<dialog id="32" charName="Saeki" place="date1">
+		<text>Test1 * Test2</text>
+		<options>
+			<option id="0" link="32" affection="25" isEnd="false" itemCheck="0">Yes</option>
+			<option id="1" link="32" affection="0" isEnd="true" itemCheck="0">No</option>
+		</options>
+	</dialog>
 </scenario>

@@ -68,7 +68,7 @@ public class DialogManager
         //Get Scenario file paths
         foreach (string file in Directory.GetFiles("Assets\\Scenarios", "*.xml"))
         {
-            Debug.Log("FILE: " + file);
+            //Debug.Log("FILE: " + file);
 
             List<Dialog> dialogList = new List<Dialog>();
 
@@ -77,7 +77,7 @@ public class DialogManager
             //Get character/scenario name
             string scenarioName = doc.SelectSingleNode("scenario").Attributes.GetNamedItem("name").Value;
 
-			Debug.Log(scenarioName);
+			//Debug.Log(scenarioName);
 
             XmlNodeList dialogNodes = doc.SelectSingleNode("scenario").SelectNodes("dialog");  //Selects all <dialog> nodes
 

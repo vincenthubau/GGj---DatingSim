@@ -48,6 +48,8 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 
 		//Load Dialog of the NPC
+		Debug.Log(npcObject.name);
+		Debug.Log(npcObject.dialogId);
 		npcId = npcObject.name;
 		dialogId = npcObject.dialogId;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
@@ -128,6 +130,8 @@ public class VisualNovelManager : MonoBehaviour {
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
 
+		npcId = npcObject.name;
+		dialogId = npcObject.dialogId; 
 		//Change the background?
 		SetBackgroundImage(d);
 
@@ -203,7 +207,7 @@ public class VisualNovelManager : MonoBehaviour {
 			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[1];
 			//We add the afection only if it isn't a hundred
 			if(npcObject.affection < 100f){
-				npcObject.AddAffection(optionList[1].AffectionValue);
+				npcObject.AddAffection(optionList[0].AffectionValue);
 			}
 		}
 		//If this option lead to a return to the HUD

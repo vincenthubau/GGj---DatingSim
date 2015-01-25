@@ -45,6 +45,7 @@ public class Player : MonoBehaviour {
 					if(!isCollided) {
 						isCollided = true;
 						npc = hit.collider.transform.gameObject.GetComponent<NPC>();
+						Debug.Log(npc.name);
 						interactText.SetActive(true);
 					}
 				}

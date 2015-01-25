@@ -12,7 +12,7 @@ public class Controller : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        Debug.Log("MENU");
+        //Debug.Log("MENU");
 
         //Load scenarios
         DialogManager.loadScenarios();
