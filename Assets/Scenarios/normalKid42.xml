@@ -37,7 +37,7 @@
 	<dialog id="5" charName="Normal Kid #42" place="school">
 		<text>That's not what I sai...</text>
 		<options>
-			<option id="0" affection="0" link="3" itemCheck="0" isEnd="false">I feels so great now! I feel like I could accomplish anything!</option>
+			<option id="0" affection="0" link="6" itemCheck="0" isEnd="false">I feels so great now! I feel like I could accomplish anything!</option>
 		</options>
 	</dialog>
 	<dialog id="6" charName="Normal Kid #42" place="school">
