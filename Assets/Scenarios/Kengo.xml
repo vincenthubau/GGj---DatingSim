@@ -107,7 +107,7 @@
 		<options>
 			<option id="0" link="17" affection="5" isEnd="false" itemCheck="0">La Classique - regular poutine</option>
 			<option id="1" link="18" affection="3" isEnd="false" itemCheck="0">La Rachel - poutine with bell pepper, mushrooms, and onion</option>
-			<option id="2" link="19" affection="0" isEnd="false" itemCheck="0">L'Obꭩx - smoked meat poutine</option>
+			<option id="2" link="19" affection="0" isEnd="false" itemCheck="0">L'Obelix - smoked meat poutine</option>
 		</options>
 	</dialog> 
 	<dialog id="17" charName="Kengo" place="date1">
@@ -119,13 +119,13 @@
 	<dialog id="18" charName="Kengo" place="date1">
 		<text>Yeah, I think I'll go with that one too. What can I say, I'm a herbivore, hehe!</text>
 		<options>
-			<option id="1" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="19" charName="Kengo" place="date1">
 		<text>Hmm, well it's your choice of course, but I hope you wouldn't order moose meat if it was available...</text>
 		<options>
-			<option id="2" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="20" charName="Me" place="date1">

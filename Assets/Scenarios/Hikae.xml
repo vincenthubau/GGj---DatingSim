@@ -220,7 +220,43 @@
 		<text>Ok, bye!</text>
 		<options>
 			<option id="0" link="35" affection="25" isEnd="true" itemCheck="0">Bye!</option>
-			<option id="1" link="25" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
+			<option id="1" link="33" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
+		</options>
+	</dialog>
+	<dialog id="35" charName="Me" place="school">
+		<text>Hi Hikae!</text>
+		<options>
+			<option id="0" link="36" affection="0" isEnd="false" itemCheck="0">Hello!</option>
+		</options>
+	</dialog>
+	<dialog id="36" charName="Me" place="school">
+		<text>How have you been?</text>
+		<options>
+			<option id="0" link="37" affection="0" isEnd="false" itemCheck="0">--></option>
+		</options>
+	</dialog>
+	<dialog id="37" charName="Me" place="school">
+		<text>Very good, thank you!*The teacher did this exciting chemical experiment in class earlier today, it was very impressive!</text>
+		<options>
+			<option id="0" link="38" affection="0" isEnd="false" itemCheck="0">You really like science, eh? Well, I came up with a great idea for our next date! Let's go to the Biosphere!</option>
+		</options>
+	</dialog> 
+	<dialog id="38" charName="Me" place="school">
+		<text>The Biosphere? Would you really go there with me!?</text>
+		<options>
+			<option id="0" link="39" affection="0" isEnd="false" itemCheck="0">We don't have to go if...</option>
+		</options>
+	</dialog> 
+	<dialog id="39" charName="Hikae" place="school">
+		<text>No, no! I've always wanted to go there!*Apparently you can do science experiments, and they even have an interactive globe of the Earth!</text>
+		<options>
+			<option id="0" link="40" affection="0" isEnd="false" itemCheck="0">Ok, let's go then!</option>
+		</options>
+	</dialog> 
+	<dialog id="40" charName="Hikae" place="date2">
+		<text>I'm sorry, I didn't mean to imply anything like that!</text>
+		<options>
+			<option id="0" link="41" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 </scenario>
