@@ -113,19 +113,19 @@
 	<dialog id="17" charName="Kengo" place="date1">
 		<text>Great choice! Nothing beats the classic one!</text>
 		<options>
-			<option id="0" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="20" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="18" charName="Kengo" place="date1">
 		<text>Yeah, I think I'll go with that one too. What can I say, I'm a herbivore, hehe!</text>
 		<options>
-			<option id="0" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="20" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog> 
 	<dialog id="19" charName="Kengo" place="date1">
 		<text>Hmm, well it's your choice of course, but I hope you wouldn't order moose meat if it was available...</text>
 		<options>
-			<option id="0" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
+			<option id="0" link="20" affection="0" isEnd="false" itemCheck="0">--></option>
 		</options>
 	</dialog>
 	<dialog id="20" charName="Me" place="date1">

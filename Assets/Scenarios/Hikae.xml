@@ -403,7 +403,7 @@
 	<dialog id="64" charName="Hikae" place="date3">
 		<text>Oh, what are you doing...? Oh...</text>
 		<options>
-			<option id="0" link="64" affection="0" isEnd="false" itemCheck="0">Shh, let's just enjoy ourselves...</option>
+			<option id="0" link="64" affection="0" isEnd="true" itemCheck="0">Shh, let's just enjoy ourselves...</option>
 		</options>
 	</dialog>
 </scenario>
