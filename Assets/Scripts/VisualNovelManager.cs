@@ -21,6 +21,7 @@ public class VisualNovelManager : MonoBehaviour {
 	public HubSoundStarter Hub_MusicScript;
 	public HubSoundStarter Hub_AmbiantScript;
 	public AudioClip defaultAmbiant;
+	private bool isDefaultAmbiant;
 	public AudioClip defaultBackgroundMusic;
 
 	//private
@@ -66,8 +67,8 @@ public class VisualNovelManager : MonoBehaviour {
 		SetBackgroundImage(dial);
 		Hub_MusicScript.hubSound = npcObject.MusicAudio;
 		Hub_MusicScript.StartSound();
+		isDefaultAmbiant = true;
 		SetAmbiant(dial);
-		Hub_AmbiantScript.StartSound();
 
 		//Load Character
 		if(npcObject.characterExpressions.Length >0){
@@ -143,10 +144,7 @@ public class VisualNovelManager : MonoBehaviour {
 
 		//Change the background?
 		SetBackgroundImage(d);
-		Hub_MusicScript.hubSound = npcObject.MusicAudio;
-		Hub_MusicScript.StartSound();
 		SetAmbiant(d);
-		Hub_AmbiantScript.StartSound();
 
 		//Set new texts
 		m_string_text = d.Text;
@@ -210,9 +208,15 @@ public class VisualNovelManager : MonoBehaviour {
 				break;
 			default: break;
 			}
+			if (isDefaultAmbiant == true){
+				Hub_AmbiantScript.StartSound();
+				isDefaultAmbiant = false;
+			}
 		}
-		else{
+		else if (!isDefaultAmbiant) {
 			Hub_AmbiantScript.hubSound = defaultAmbiant;
+			Hub_AmbiantScript.StartSound();
+			isDefaultAmbiant = true;
 		}
 	}
 
@@ -246,6 +250,11 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 		//If this option lead to a return to the HUD
 		if(optionList[0].IsEnd){
+			//Change the music and ambiant sound to default
+			Hub_MusicScript.hubSound = defaultBackgroundMusic;
+			Hub_AmbiantScript.hubSound = defaultAmbiant;
+			Hub_MusicScript.StartSound();
+			Hub_AmbiantScript.StartSound();
 			//We set the next Dialog in the NPC so next time we talk to hit, we return at the same place
 			npcObject.dialogId = dial.getNextDialogId(0);
 			//We give back the power to move to the player
@@ -275,6 +284,10 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 
 		if(optionList[1].IsEnd){
+			Hub_MusicScript.hubSound = defaultBackgroundMusic;
+			Hub_AmbiantScript.hubSound = defaultAmbiant;
+			Hub_MusicScript.StartSound();
+			Hub_AmbiantScript.StartSound();
 			npcObject.dialogId = dial.getNextDialogId(1);
 			player.SetDisableMoveFalse();
 			interactText.GetComponent<Text>().text = "Press 'Action' to interact";
@@ -299,6 +312,10 @@ public class VisualNovelManager : MonoBehaviour {
 		}
 
 		if(optionList[2].IsEnd){
+			Hub_MusicScript.hubSound = defaultBackgroundMusic;
+			Hub_AmbiantScript.hubSound = defaultAmbiant;
+			Hub_MusicScript.StartSound();
+			Hub_AmbiantScript.StartSound();
 			npcObject.dialogId = dial.getNextDialogId(2);
 			player.SetDisableMoveFalse();
 			interactText.GetComponent<Text>().text = "Press 'Action' to interact";
