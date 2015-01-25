@@ -8,16 +8,15 @@ using System.Collections;
 /// </summary>
 public class Controller : MonoBehaviour
 {
-
+	public GameObject creditsImage;
 	// Use this for initialization
 	void Start ()
     {
+		creditsImage.SetActive(false);
         //Debug.Log("MENU");
 
         //Load scenarios
         DialogManager.loadScenarios();
-		//Call the game Scene
-		Application.LoadLevel(1);
         
 	}
 	
@@ -25,4 +24,18 @@ public class Controller : MonoBehaviour
     {
         DontDestroyOnLoad(transform.gameObject);
     }
+
+	public void LoadGame(){
+		Application.LoadLevel(1);
+	}
+
+	public void ToggleCredits(){
+		if(creditsImage.activeSelf){
+			creditsImage.SetActive(false);
+		}
+		else{
+			creditsImage.SetActive(true);
+		}
+	}
+
 }
