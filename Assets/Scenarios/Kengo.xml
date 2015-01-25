@@ -199,7 +199,7 @@
 	<dialog id="31" charName="Kengo" place="date1">
 		<text>Ok!</text>
 		<options>
-			<option id="0" link="32" affection="25" isEnd="true" itemCheck="0">Let's go!</option>
+			<option id="0" link="31" affection="25" isEnd="true" itemCheck="0">Let's go!</option>
 			<option id="1" link="30" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>

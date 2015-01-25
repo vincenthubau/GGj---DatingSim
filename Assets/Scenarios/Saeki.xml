@@ -205,7 +205,7 @@
 	<dialog id="32" charName="Saeki" place="date1">
 		<text>Ok, bye!</text>
 		<options>
-			<option id="0" link="33" affection="25" isEnd="true" itemCheck="0">Bye!</option>
+			<option id="0" link="32" affection="25" isEnd="true" itemCheck="0">Bye!</option>
 			<option id="1" link="31" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>

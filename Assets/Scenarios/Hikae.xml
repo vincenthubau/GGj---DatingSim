@@ -356,7 +356,7 @@
 	<dialog id="56" charName="Hikae" place="date2">
 		<text>Ok, let's head out then!</text>
 		<options>
-			<option id="0" link="57" affection="25" isEnd="true" itemCheck="0">Ok!</option>
+			<option id="0" link="56" affection="25" isEnd="true" itemCheck="0">Ok!</option>
 			<option id="1" link="55" affection="0" isEnd="false" itemCheck="0">Not yet.</option>
 		</options>
 	</dialog>
