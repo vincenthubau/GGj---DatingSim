@@ -1,0 +1,40 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3587038523	Rayman_SW_Footsteps_Play			\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps_Play	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	785877586	Rayman_SW_Footsteps			\Default Work Unit\Rayman_SW_Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	787898836	Snow	Rayman_SW_Footsteps			
+	2058049674	Wood	Rayman_SW_Footsteps			
+	2473969246	Metal	Rayman_SW_Footsteps			
+	2830102203	Pavement	Rayman_SW_Footsteps			
+	3071020303	CountryRoad	Rayman_SW_Footsteps			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	26060977	Footsteps_Metal_01	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Metal_01_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Metal\Footsteps_Metal_01		51456
+	32816289	Footsteps_Wood_01	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Wood_01_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Wood\Footsteps_Wood_01		16704
+	98844674	Footsteps_Snow_02	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Snow_02_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Snow\Footsteps_Snow_02		56240
+	196183892	Footsteps_Metal_02	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Metal_02_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Metal\Footsteps_Metal_02		60724
+	252775063	Footsteps_CountryRoad_03	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_CountryRoad_03_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_CountryRoad\Footsteps_CountryRoad_03		33664
+	276078956	Footsteps_Wood_03	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Wood_03_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Wood\Footsteps_Wood_03		26672
+	300551156	Footsteps_Wood_04	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Wood_04_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Wood\Footsteps_Wood_04		26400
+	313842322	Footsteps_Wood_02	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Wood_02_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Wood\Footsteps_Wood_02		15248
+	318046673	Footsteps_Pavement_01	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Pavement_01_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Pavement\Footsteps_Pavement_01		17888
+	443147835	Footsteps_Snow_05	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Snow_05_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Snow\Footsteps_Snow_05		66112
+	480107166	Footsteps_Metal_03	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Metal_03_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Metal\Footsteps_Metal_03		70016
+	584561062	Footsteps_Pavement_04	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Pavement_04_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Pavement\Footsteps_Pavement_04		19952
+	596173283	Footsteps_Pavement_05	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Pavement_05_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Pavement\Footsteps_Pavement_05		21376
+	598201111	Footsteps_Metal_05	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Metal_05_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Metal\Footsteps_Metal_05		73256
+	699718644	Footsteps_Snow_01	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Snow_01_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Snow\Footsteps_Snow_01		24240
+	784533012	Footsteps_CountryRoad_01	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_CountryRoad_01_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_CountryRoad\Footsteps_CountryRoad_01		30176
+	837569647	Footsteps_CountryRoad_05	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_CountryRoad_05_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_CountryRoad\Footsteps_CountryRoad_05		22400
+	847786606	Footsteps_Wood_05	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Wood_05_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Wood\Footsteps_Wood_05		9504
+	851914491	Footsteps_Pavement_02	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Pavement_02_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Pavement\Footsteps_Pavement_02		17720
+	915155835	Footsteps_Snow_03	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Snow_03_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Snow\Footsteps_Snow_03		67792
+	922064763	Footsteps_CountryRoad_02	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_CountryRoad_02_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_CountryRoad\Footsteps_CountryRoad_02		26080
+	998570931	Footsteps_Metal_04	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Metal_04_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Metal\Footsteps_Metal_04		51264
+	1037939705	Footsteps_Snow_04	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Snow_04_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Snow\Footsteps_Snow_04		75072
+	1048089129	Footsteps_CountryRoad_04	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_CountryRoad_04_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_CountryRoad\Footsteps_CountryRoad_04		25344
+	1048130457	Footsteps_Pavement_03	C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\SFX\Footsteps\Footsteps_Pavement_03_ABA27AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\300_MC\Rayman\Rayman_SW_Footsteps\Rayman_Footsteps_Pavement\Footsteps_Pavement_03		26544
+

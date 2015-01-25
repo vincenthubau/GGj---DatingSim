@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Pol\Desktop\GAMEJAM\DatingGame\Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pol\Desktop\GAMEJAM\DatingGame\Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pol\Desktop\GAMEJAM\DatingGame\Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Pol\Desktop\GAMEJAM\DatingGame\Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="46914872" Language="SFX">
+			<ShortName>DatingGame_Music_Caribou.wav</ShortName>
+			<Path>SFX\DatingGame_Music_Caribou_2830D84E.wem</Path>
+		</File>
+		<File Id="194747821" Language="SFX">
+			<ShortName>DatingGame_Amb_Plant_Parc_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Plant_Parc_01_726F9AF9.wem</Path>
+		</File>
+		<File Id="240783757" Language="SFX">
+			<ShortName>DatingGame_Amb_Person_4thDim_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Person_4thDim_01_325164A5.wem</Path>
+		</File>
+		<File Id="312111593" Language="SFX">
+			<ShortName>DatingGame_Amb_Plant_Biosphere_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Plant_Biosphere_01_B3656ECB.wem</Path>
+		</File>
+		<File Id="362690662" Language="SFX">
+			<ShortName>DatingGame_Amb_Caribou_RestaurantBanquise_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Caribou_RestaurantBanquise_01_726F9AF9.wem</Path>
+		</File>
+		<File Id="396224534" Language="SFX">
+			<ShortName>DatingGame_Amb_Plant_Space_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Plant_Space_01_726F9AF9.wem</Path>
+		</File>
+		<File Id="404864714" Language="SFX">
+			<ShortName>DatingGame_Amb_General_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_General_01_A817A676.wem</Path>
+		</File>
+		<File Id="473282378" Language="SFX">
+			<ShortName>DatingGame_Amb_Caribou_ArcticCircle_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Caribou_ArcticCircle_01_726F9AF9.wem</Path>
+		</File>
+		<File Id="618765980" Language="SFX">
+			<ShortName>DatingGame_Amb_Person_Cinema_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Person_Cinema_01_726F9AF9.wem</Path>
+		</File>
+		<File Id="705658029" Language="SFX">
+			<ShortName>DatingGame_Amb_Person_MusicFestival_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Person_MusicFestival_01_726F9AF9.wem</Path>
+		</File>
+		<File Id="710408811" Language="SFX">
+			<ShortName>DatingGame_Music_Person.wav</ShortName>
+			<Path>SFX\DatingGame_Music_Person_CA4A81DC.wem</Path>
+		</File>
+		<File Id="718783622" Language="SFX">
+			<ShortName>DatingGame_Music_Plant.wav</ShortName>
+			<Path>SFX\DatingGame_Music_Plant_7938E10C.wem</Path>
+		</File>
+		<File Id="905610091" Language="SFX">
+			<ShortName>DatingGame_Amb_Caribou_CenterBell_01.wav</ShortName>
+			<Path>SFX\DatingGame_Amb_Caribou_CenterBell_01_726F9AF9.wem</Path>
+		</File>
+	</StreamedFiles>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1956625499" Language="SFX">
+			<ShortName>MC_SB</ShortName>
+			<Path>MC_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="897003962" Name="Amb_Caribou_ArcticCircle_01"/>
+				<Event Id="3765653534" Name="Amb_Caribou_CenterBell_01"/>
+				<Event Id="3466987591" Name="Amb_Caribou_RestaurantBanquise_01"/>
+				<Event Id="1567697648" Name="Amb_General_01"/>
+				<Event Id="3487247564" Name="Amb_Person_4thDim_01"/>
+				<Event Id="3434220753" Name="Amb_Person_Cinema_01"/>
+				<Event Id="1059916333" Name="Amb_Person_MusicFestival_01"/>
+				<Event Id="1350666505" Name="Amb_Plant_Biosphere_01"/>
+				<Event Id="448342306" Name="Amb_Plant_Parc_01"/>
+				<Event Id="2701082012" Name="Amb_Plant_Space_01"/>
+				<Event Id="2507796264" Name="Music_Caribou"/>
+				<Event Id="1449180014" Name="Music_Person"/>
+				<Event Id="3101383476" Name="Music_Plant"/>
+				<Event Id="3587038523" Name="Rayman_SW_Footsteps_Play"/>
+				<Event Id="3972309363" Name="Sfx_Meter_DOWN"/>
+				<Event Id="1074797556" Name="Sfx_Meter_UP"/>
+				<Event Id="2977800699" Name="Sfx_Reaction_Bench_Insult"/>
+				<Event Id="2002562236" Name="Sfx_Reaction_Plant_Angry"/>
+				<Event Id="3989803057" Name="Sfx_Reaction_Plant_Happy"/>
+				<Event Id="3175794594" Name="Sfx_Reaction_Plant_Neutre"/>
+				<Event Id="3553447535" Name="Sfx_Reaction_Plant_Sad"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="46914872"/>
+				<File Id="194747821"/>
+				<File Id="240783757"/>
+				<File Id="312111593"/>
+				<File Id="362690662"/>
+				<File Id="396224534"/>
+				<File Id="404864714"/>
+				<File Id="473282378"/>
+				<File Id="618765980"/>
+				<File Id="705658029"/>
+				<File Id="710408811"/>
+				<File Id="718783622"/>
+				<File Id="905610091"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="90014103" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_03.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_03_ABA27AF7.wem</Path>
+				</File>
+				<File Id="90866113" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_02.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="244892170" Language="SFX">
+					<ShortName>Sfx_Reaction_Bench_insult_02.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Bench_insult_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="250303155" Language="SFX">
+					<ShortName>Sfx_Reaction_Plant_Sad.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Plant_Sad_ABA27AF7.wem</Path>
+				</File>
+				<File Id="260780285" Language="SFX">
+					<ShortName>Sfx_Reaction_Plant_Neutre.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Plant_Neutre_ABA27AF7.wem</Path>
+				</File>
+				<File Id="292269334" Language="SFX">
+					<ShortName>Sfx_Reaction_Plant_Happy.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Plant_Happy_ABA27AF7.wem</Path>
+				</File>
+				<File Id="298666249" Language="SFX">
+					<ShortName>Sfx_Meter_UP.wav</ShortName>
+					<Path>SFX\Sfx_Meter_UP_ABA27AF7.wem</Path>
+				</File>
+				<File Id="396976595" Language="SFX">
+					<ShortName>Sfx_Reaction_Bench_insult_03.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Bench_insult_03_ABA27AF7.wem</Path>
+				</File>
+				<File Id="417590994" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_06.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_06_ABA27AF7.wem</Path>
+				</File>
+				<File Id="466122351" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_05.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="641036797" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_04.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="647836074" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_01.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="657644051" Language="SFX">
+					<ShortName>Footstep_Concrete_Walk_07.wav</ShortName>
+					<Path>SFX\Footstep_Concrete_Walk_07_ABA27AF7.wem</Path>
+				</File>
+				<File Id="698505089" Language="SFX">
+					<ShortName>Sfx_Reaction_Bench_insult_01.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Bench_insult_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="905225186" Language="SFX">
+					<ShortName>Sfx_Reaction_Plant_Angry.wav</ShortName>
+					<Path>SFX\Sfx_Reaction_Plant_Angry_ABA27AF7.wem</Path>
+				</File>
+				<File Id="1046424792" Language="SFX">
+					<ShortName>Sfx_Meter_DOWN.wav</ShortName>
+					<Path>SFX\Sfx_Meter_DOWN_ABA27AF7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

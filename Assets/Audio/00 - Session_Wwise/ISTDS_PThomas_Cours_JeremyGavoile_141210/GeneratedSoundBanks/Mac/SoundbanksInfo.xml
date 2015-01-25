@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Pol\Desktop\Projets Wwise\ISTDS_PThomas_Cours_JeremyGavoile_141210\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="230057975" Language="SFX">
+			<ShortName>Pol_Thomas_Ambiant.wav</ShortName>
+			<Path>SFX\Pol_Thomas_Ambiant_0D3361A5.wem</Path>
+		</File>
+		<File Id="841777287" Language="SFX">
+			<ShortName>Amb_Jungle_Night_Lp.wav</ShortName>
+			<Path>SFX\Amb_Jungle_Night_Lp_F0740C97.wem</Path>
+		</File>
+	</StreamedFiles>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1956625499" Language="SFX">
+			<ShortName>MC_SB</ShortName>
+			<Path>MC_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3587038523" Name="Rayman_SW_Footsteps_Play"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="26060977" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Metal_01.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Metal_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="32816289" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Wood_01.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Wood_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="98844674" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Snow_02.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Snow_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="196183892" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Metal_02.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Metal_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="252775063" Language="SFX">
+					<ShortName>Footsteps\Footsteps_CountryRoad_03.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_CountryRoad_03_ABA27AF7.wem</Path>
+				</File>
+				<File Id="276078956" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Wood_03.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Wood_03_ABA27AF7.wem</Path>
+				</File>
+				<File Id="300551156" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Wood_04.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Wood_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="313842322" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Wood_02.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Wood_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="318046673" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Pavement_01.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Pavement_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="443147835" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Snow_05.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Snow_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="480107166" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Metal_03.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Metal_03_ABA27AF7.wem</Path>
+				</File>
+				<File Id="584561062" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Pavement_04.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Pavement_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="596173283" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Pavement_05.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Pavement_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="598201111" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Metal_05.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Metal_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="699718644" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Snow_01.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Snow_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="784533012" Language="SFX">
+					<ShortName>Footsteps\Footsteps_CountryRoad_01.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_CountryRoad_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="837569647" Language="SFX">
+					<ShortName>Footsteps\Footsteps_CountryRoad_05.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_CountryRoad_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="847786606" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Wood_05.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Wood_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="851914491" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Pavement_02.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Pavement_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="915155835" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Snow_03.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Snow_03_ABA27AF7.wem</Path>
+				</File>
+				<File Id="922064763" Language="SFX">
+					<ShortName>Footsteps\Footsteps_CountryRoad_02.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_CountryRoad_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="998570931" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Metal_04.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Metal_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="1037939705" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Snow_04.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Snow_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="1048089129" Language="SFX">
+					<ShortName>Footsteps\Footsteps_CountryRoad_04.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_CountryRoad_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="1048130457" Language="SFX">
+					<ShortName>Footsteps\Footsteps_Pavement_03.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_Pavement_03_ABA27AF7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2227260123" Language="SFX">
+			<ShortName>Ambiance_SB</ShortName>
+			<Path>Ambiance_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2696645551" Name="Amb_Horror_Explosion_Play"/>
+				<Event Id="1588554526" Name="Amb_Jungle_Night_Explosions_Play"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="230057975"/>
+				<File Id="841777287"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="305282377" Language="SFX">
+					<ShortName>Explosions_Far\Explosion_Far_04.wav</ShortName>
+					<Path>SFX\Explosions_Far\Explosion_Far_04_ABA27AF7.wem</Path>
+				</File>
+				<File Id="525420529" Language="SFX">
+					<ShortName>Explosions_Far\Explosion_Far_05.wav</ShortName>
+					<Path>SFX\Explosions_Far\Explosion_Far_05_ABA27AF7.wem</Path>
+				</File>
+				<File Id="612148943" Language="SFX">
+					<ShortName>Explosions_Far\Explosion_Far_02.wav</ShortName>
+					<Path>SFX\Explosions_Far\Explosion_Far_02_ABA27AF7.wem</Path>
+				</File>
+				<File Id="1002663542" Language="SFX">
+					<ShortName>Explosions_Far\Explosion_Far_01.wav</ShortName>
+					<Path>SFX\Explosions_Far\Explosion_Far_01_ABA27AF7.wem</Path>
+				</File>
+				<File Id="1028322595" Language="SFX">
+					<ShortName>Explosions_Far\Explosion_Far_03.wav</ShortName>
+					<Path>SFX\Explosions_Far\Explosion_Far_03_ABA27AF7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

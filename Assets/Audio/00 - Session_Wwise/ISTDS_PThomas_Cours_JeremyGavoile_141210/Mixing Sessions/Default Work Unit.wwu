@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E3183276-3C74-4835-9D07-F4E7B2E0EC59}" SchemaVersion="69">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{E3183276-3C74-4835-9D07-F4E7B2E0EC59}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Mixing_Desk" ID="{A21CC681-FB3B-4AFC-8998-676862C52ACD}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98054F77-CAA2-4C30-A035-A60A01B3E851}"/>
+						<ObjectRef Name="Ambiance" ID="{D90708FA-37DB-43B5-92FF-D95DA0228CD8}" WorkUnitID="{98054F77-CAA2-4C30-A035-A60A01B3E851}"/>
+						<ObjectRef Name="Amb_Lp" ID="{5F6C2D26-353C-4979-ADBB-113AC553B67E}" WorkUnitID="{98054F77-CAA2-4C30-A035-A60A01B3E851}"/>
+						<ObjectRef Name="Amb_Sfx" ID="{59EFBFCA-59DB-4FB5-B9C6-ACE00F525BB6}" WorkUnitID="{98054F77-CAA2-4C30-A035-A60A01B3E851}"/>
+						<ObjectRef Name="MC" ID="{57411159-7510-4814-B727-494524464AD6}" WorkUnitID="{98054F77-CAA2-4C30-A035-A60A01B3E851}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

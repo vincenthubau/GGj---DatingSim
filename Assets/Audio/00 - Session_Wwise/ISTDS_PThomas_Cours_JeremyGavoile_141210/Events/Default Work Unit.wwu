@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F0EB4B26-4369-4E63-886E-9CCA9AD25DB0}" SchemaVersion="69">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F0EB4B26-4369-4E63-886E-9CCA9AD25DB0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="300_MC" ID="{FEA50C43-F520-4A42-974F-95158A4F2A36}" ShortID="400353360">
+					<ChildrenList>
+						<Folder Name="Rayman" ID="{32E309FF-B876-4A70-A1C9-BFDBDEB28B91}" ShortID="425162862">
+							<ChildrenList>
+								<Event Name="Rayman_SW_Footsteps_Play" ID="{79850C19-381A-4AF3-BBD0-563FD458CE2D}">
+									<ChildrenList>
+										<Action Name="Play" ID="{63014F05-C592-480A-93B6-BB0B68F93693}" ShortID="622870572" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{5B064553-EFE1-48EE-A8E8-8E50C32ECBD5}" Global="false">
+													<ObjectRef Name="Rayman_SW_Footsteps" ID="{902E50AB-03CF-48F1-A365-CAC00C9BC81C}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Music_Caribou" ID="{C34B3804-A633-41AF-A856-99B894E01B96}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5B3715B7-6F47-482F-BC5E-4E096B61ABDC}" ShortID="411358069" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{20517B6E-09A3-4A90-8956-9E31FE5AB072}" Global="false">
+									<ObjectRef Name="DatingGame_Music_Caribou" ID="{1E8BA2DF-5DE6-44FC-8FEE-256675549B42}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Person" ID="{40FD0BAD-F32D-4D06-AE89-981FEF9713F9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DB7902C5-A580-488A-98C2-0DC2ABA07B0B}" ShortID="516917296" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B4D36300-4D1F-43CD-97B6-1B8C5D82F51F}" Global="false">
+									<ObjectRef Name="DatingGame_Music_Person" ID="{2F024FA0-E8B7-4A1E-992A-B8E49ADFCEBC}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Plant" ID="{B95FC7BA-D980-417C-B53C-BCE79643EA4D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EA1A6DE4-3B25-4D61-B303-012321A702CB}" ShortID="586532607" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{87032390-64E4-48AF-B33F-4FB4C38C46D0}" Global="false">
+									<ObjectRef Name="DatingGame_Music_Plant" ID="{75E34296-51BE-4B2C-9946-C1621FAB5E79}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Caribou_ArcticCircle_01" ID="{EF0693AA-F39E-4ABD-834D-2E5FC256DC56}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9C3021D9-7A3A-4AF7-ABD3-BA685BE5806A}" ShortID="532593285" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{09DFE4E2-7210-4EE1-AD4D-85E471C5A568}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Caribou_ArcticCircle_01" ID="{EEB77BA3-E710-4E41-BFD6-0AA7F60F11A9}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Caribou_CenterBell_01" ID="{F32E1C1F-7D03-4F4C-AB7E-D7461041E35E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{05305FB5-ACA4-4C6C-BA8B-A337ECA43CB5}" ShortID="214773230" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AEA2C69C-4DD7-4602-8C18-19894479879E}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Caribou_CenterBell_01" ID="{1157ED13-B936-4E96-B626-C88BDE4AF818}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Caribou_RestaurantBanquise_01" ID="{A13708BC-773B-472F-A92B-96D939E96C05}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DBBD6517-805C-4B5B-8F25-59091CD7DEA7}" ShortID="213798331" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{95655ADC-7EAC-4FA9-9D3D-EBDD372F74D2}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Caribou_RestaurantBanquise_01" ID="{3453D953-1BF6-428D-ADB6-73103FEA93F5}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_And_Music_General" ID="{981C3F89-D178-453F-843A-5869F3D7B7C4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A17D14CA-8021-4775-B2B2-A6D8FD9B269E}" ShortID="375252849" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4EEC5D05-3C80-45DD-B873-AAD8CFA5621F}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_General_01" ID="{65DEF4E7-FD7C-4629-B509-58C1512886FC}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{06410B7D-90E9-4459-83AF-6FDF4EDEB05E}" ShortID="879044185" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{68787F65-CB77-45C8-8C9D-A32AE0E967CC}" Global="false">
+									<ObjectRef Name="MU_General_01" ID="{A4CAE429-4A36-4693-A6DC-23824F0348DD}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Person_4thDim_01" ID="{4CE388A5-5A0D-4BC9-88A4-DBD4345BB645}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F1836892-5E46-4D84-8163-B576268D05BE}" ShortID="705613504" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AA0A1DF8-E743-44D6-A52C-7522F5245009}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Person_4thDim_01" ID="{82B2F45C-8367-4010-83C2-262C0699ED37}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Person_Cinema_01" ID="{39B2EF2A-7A09-4611-BA61-30F815C8CD78}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0C32DE89-7C22-453A-9C82-9361816E4EC2}" ShortID="955703193" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2A74D345-3130-4C1E-AD92-407773754221}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Person_Cinema_01" ID="{063F95B6-99D0-4DE7-A3DE-64D553758E44}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Person_MusicFestival_01" ID="{C384009D-4ADA-423B-80CC-95AAF951578A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B770E76C-AF4B-4C47-9A3A-9BA6D8271BEB}" ShortID="1045852220" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E71A24B3-8327-4936-9BD9-A9C9FA752DDE}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Person_MusicFestival_01" ID="{D7BBF603-8122-41F0-95BD-C5343C36C5A0}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Plant_Biosphere_01" ID="{16B2E6CC-A622-4D10-B74A-38516C13B7AF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F6E4F8C2-C9FD-446C-A9A6-A4A0E1FD3077}" ShortID="1001147673" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A11AB5F1-8581-4354-A86A-378C2BCDD547}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Plant_Biosphere_01" ID="{E6896588-EB62-42F2-9E68-06D47071AB6C}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Plant_Parc_01" ID="{A1A45C88-4D2B-4E80-8FCF-ABD0F1C57BB2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9A6D5D7A-FE8B-4944-97D9-4C92AD69680F}" ShortID="843749063" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6870E692-124C-4152-A6B3-67C82CA3009F}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Plant_Parc_01" ID="{A6855BFC-CD14-413E-922A-7905057F1022}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Plant_Space_01" ID="{C6B75BBB-BE12-43B3-A1F1-52F061F878F6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B45E909C-EE65-49EF-A7A1-3888E6FAC79D}" ShortID="695773942" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5A9B79DB-522F-4DE8-8EEC-1F8911AF71F8}" Global="false">
+									<ObjectRef Name="DatingGame_Amb_Plant_Space_01" ID="{51348A2E-DDFA-48D4-BB81-D1A3078245CB}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Meter_DOWN" ID="{F1A07BC0-B2F0-4DD2-AAD7-75EECF724F45}">
+					<ChildrenList>
+						<Action Name="Play" ID="{93F4E426-3A71-42F0-BF52-259A41C92B83}" ShortID="30164333" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{306A7A7C-261A-467A-A93D-E62F37758B1E}" Global="false">
+									<ObjectRef Name="Sfx_Meter_DOWN" ID="{60B1CD62-9A41-4ABE-BFF9-D1819F689C74}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Meter_UP" ID="{C3508FE0-890A-4E33-BD36-394AA4AC449C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1B5DCE1F-7C58-4E8A-B25D-5D6A9DA039C0}" ShortID="573940133" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A2BCC73B-5542-4014-9B64-3791D18430F7}" Global="false">
+									<ObjectRef Name="Sfx_Meter_UP" ID="{4E0A95F6-19BF-4C93-815E-67A2CAB4B93C}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Reaction_Bench_Insult_Rnd" ID="{C6CAF4F0-9697-4A21-9E4A-705BDF5BDEB0}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E0042AC2-7B5D-4B2E-82BA-6F61B2A3E034}" ShortID="649789663" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E32D0826-F5D7-47BE-A18B-5A9DC24E1E1E}" Global="false">
+									<ObjectRef Name="Sfx_Reaction_Bench_Insult" ID="{5C97C63B-8A44-4783-953D-2321A93627C6}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Balloon_Shot_Rnd" ID="{89D149CE-5C91-48CA-B802-F1DB1CA0A5C3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{355640BC-CEAA-4AD9-99A8-EF867FB12900}" ShortID="554969895" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EB15D93D-BD49-46C6-9C38-DE0E27F4A39A}" Global="false">
+									<ObjectRef Name="Sfx_Balloon_Shot" ID="{FED597DE-DB4B-4C7F-8E02-F211583D06B1}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Reaction_Plant_Angry_Rnd" ID="{F842305D-4ADE-4E56-9A5B-36F1DD462745}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9F8FA66B-E7FE-40F8-B3EF-4B65F5C35C17}" ShortID="474011890" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AE5D1800-7B14-40D1-8FBF-BA445D588FBB}" Global="false">
+									<ObjectRef Name="Sfx_Reaction_Plant_Angry" ID="{6C1D247C-A8F0-439F-B626-245EF689B87B}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Reaction_Plant_Happy_Rnd" ID="{512776EE-D405-4316-B834-93FD75A60CE4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A7F6B836-DE09-4617-A591-CD3815DACE52}" ShortID="948001411" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3E680F96-99F0-4F00-9D30-3239D183AC01}" Global="false">
+									<ObjectRef Name="Sfx_Reaction_Plant_Happy" ID="{BE68BA2A-F59B-4CE7-BC9F-34052AC9F67F}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Reaction_Plant_Neutre_Rnd" ID="{C4FB6F5D-9D65-4438-9095-60EEF8C4E8BF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{83253638-51AC-40C5-BB01-E4347585C264}" ShortID="978284955" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E4E36277-DFEE-46A9-9BEB-DB4D4EFD3044}" Global="false">
+									<ObjectRef Name="Sfx_Reaction_Plant_Neutre" ID="{054160BF-0CFF-4E71-A010-3A364E8D5592}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Reaction_Plant_Sad_Rnd" ID="{6733A187-B167-4526-9F35-D82DB8E75C3B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6A197F88-0A26-4A04-8B2F-03C62F79CFEB}" ShortID="689396746" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CFCF7B35-1432-4E36-9EAA-1A117CD2AC4F}" Global="false">
+									<ObjectRef Name="Sfx_Reaction_Plant_Sad" ID="{967AFDB5-20A0-4E60-8B59-BE1F6CEE5E92}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Kick_Bench_Rnd" ID="{1D6EBAF7-C950-470E-ADCA-80619F0BF398}">
+					<ChildrenList>
+						<Action Name="Play" ID="{25A637FD-438A-4BEC-9143-EC407CF08EA0}" ShortID="223075266" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B5AC999E-E2A9-4719-B125-792B6BCD9FB5}" Global="false">
+									<ObjectRef Name="Sfx_Kick_Bench" ID="{2811A9C9-DC00-4378-8CA0-B13900757D0B}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_Bench_Hit_Rnd" ID="{206FE238-7D43-4420-B188-37FBB9A7496F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3F0C7F2A-2D32-4D30-9E83-CA44DEFDDD42}" ShortID="1032017545" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7EF08A33-229C-4B95-B429-0F2C59C416D8}" Global="false">
+									<ObjectRef Name="Sfx_Bench_Hit" ID="{D404DA38-AB8B-4699-87B1-13E143CB4192}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MU_Combat_Bench" ID="{162E8B44-26E2-4928-B7E6-CC16C1EEC60E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BB3F8547-D1D2-4BB7-A131-077678879480}" ShortID="1057561722" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A7C1F8F0-78EF-42D1-A36E-F52F88FF2996}" Global="false">
+									<ObjectRef Name="MU_Combat_Bench" ID="{73CFA57F-6D44-41FD-88D4-DFDA11F859D2}" WorkUnitID="{7045DF65-5A9C-487B-90A5-5B0BBCF2A1DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
