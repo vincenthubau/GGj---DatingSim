@@ -94,12 +94,7 @@ public class Player : MonoBehaviour {
 		body.velocity += pushDir * pushPower;
 	}
 
-	public void GetDisableMove(){
-		Debug.Log(disableMove);
-	}
-
-	public void SetDisableMoveTrue(){
-		disableMove = false;
-		GetDisableMove();
+	public void SetDisableMoveFalse(){
+		disableMove = false; 
 	}
 }

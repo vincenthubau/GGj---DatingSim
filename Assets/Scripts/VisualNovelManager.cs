@@ -7,6 +7,7 @@ public class VisualNovelManager : MonoBehaviour {
 	//public
 	public GameObject backgroundImage;
 	public GameObject npcImage;
+	public GameObject interactText;
 	public GameObject npcTextbox;
 	public GameObject npcNameText;
 	public GameObject npcPhraseText;
@@ -42,10 +43,15 @@ public class VisualNovelManager : MonoBehaviour {
 		npcId = npcObject.name;
 		dialogId = npcObject.dialogId;
 		dial = DialogManager.getNextDialog( npcId, dialogId );
+		//Should we change the backgroundImage? Let's check
+		SetBackgroundImage(dial);
+
 		optionList = dial.getOptions();
 		//Load Background
-		//dial.Place;
+		interactText.SetActive(false);
+		//backgroundImage.SetActive(true);
 		//Load Character
+		npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[0];
 		//if(dial.CharacterName != "Me")
 		//dial.CharacterName
 		npcNameText.GetComponent<Text>().text = dial.CharacterName;
@@ -105,6 +111,8 @@ public class VisualNovelManager : MonoBehaviour {
 	public void NextDialog(Dialog d){
 		npcTextbox.SetActive(true);
 		playerTextbox.SetActive(false);
+		//Change the background?
+		SetBackgroundImage(d);
 		m_string_text = d.Text;
 		optionList = d.getOptions();
 		//Parse the string
@@ -133,6 +141,23 @@ public class VisualNovelManager : MonoBehaviour {
 		} 
 	}
 
+	//Depending on the place contained in the Dialog, we set the correct background for the character
+	void SetBackgroundImage(Dialog d){
+		if(d.Place != "school"){
+			backgroundImage.SetActive(true);
+			switch(d.Place){
+			case "date1": backgroundImage.GetComponent<Image>().sprite = npcObject.backgroundImages[0];
+				break;
+			case "date2": backgroundImage.GetComponent<Image>().sprite = npcObject.backgroundImages[1];
+				break;
+			case "date3": backgroundImage.GetComponent<Image>().sprite = npcObject.backgroundImages[2];
+				break;
+			default: break;
+			}
+		}
+
+	}
+
 	//Wait for some time
 	IEnumerator WaitSomeTime(float time){
 		canPrint = true;
@@ -141,16 +166,16 @@ public class VisualNovelManager : MonoBehaviour {
 
 	//
 	public void OnClickButton1(){
-
 		//The way to add affection
-		if(optionList[0].AffectionValue > 0){
+		if(optionList[0].AffectionValue != 0){
+			npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[1];
 			if(npcObject.affection < 100f){
 				npcObject.AddAffection(optionList[1].AffectionValue);
 			}
 		}
 		if(optionList[0].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(0);
-			player.SetDisableMoveTrue();
+			player.SetDisableMoveFalse();
 			gameObject.SetActive(false);
 		}
 		else{
@@ -160,14 +185,15 @@ public class VisualNovelManager : MonoBehaviour {
 	}
 
 	public void OnClickButton2(){
-		if(optionList[1].AffectionValue > 0){
+		if(optionList[1].AffectionValue != 0){
+			//npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[2];
 			if(npcObject.affection < 100f){
 				npcObject.AddAffection(optionList[1].AffectionValue);
 			}
 		}
 		if(optionList[1].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(1);
-			player.SetDisableMoveTrue();
+			player.SetDisableMoveFalse();
 			gameObject.SetActive(false);
 		}
 		else{
@@ -177,14 +203,15 @@ public class VisualNovelManager : MonoBehaviour {
 	}
 
 	public void OnClickButton3(){
-		if(optionList[2].AffectionValue > 0){
+		if(optionList[2].AffectionValue != 0){
+			//npcImage.GetComponent<Image>().sprite = npcObject.characterExpressions[3];
 			if(npcObject.affection < 100f){
 				npcObject.AddAffection(optionList[1].AffectionValue);
 			}
 		}
 		if(optionList[2].IsEnd){
 			npcObject.dialogId = dial.getNextDialogId(2);
-			player.SetDisableMoveTrue();
+			player.SetDisableMoveFalse();
 			gameObject.SetActive(false);
 		}
 		else{
