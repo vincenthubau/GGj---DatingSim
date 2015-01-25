@@ -6,9 +6,9 @@ public class NPC : MonoBehaviour {
 	[SerializeField]
 	private string m_name;
 	public Slider affectionSlider;
-	//Neutral, happy, sad and angry
+	//4 Sprites : Neutral, happy, sad and angry
 	public Sprite[] characterExpressions;
-	//Date1, Date2, Date3
+	//3 SPrites : Date1, Date2, Date3
 	public Sprite[] backgroundImages;
 	public string name
 	{
