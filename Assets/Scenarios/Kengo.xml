@@ -59,7 +59,7 @@
 		</options>
 	</dialog>
 	<dialog id="9" charName="Kengo" place="school">
-		<text>Did you just get the dog to leave? Thank you so much!*You seem like a really nice person, let's go out somewhere!</text>
+		<text>You got the dog to leave? Thank you so much!*You seem like a really nice person, let's go out somewhere!</text>
 		<options>
 			<option id="0" link="10" affection="0" isEnd="false" itemCheck="0">Yeah, let's go amoose ourselves.</option>
 			<option id="1" link="12" affection="0" isEnd="true" itemCheck="0">I have otter things to do.</option>
@@ -123,7 +123,7 @@
 		</options>
 	</dialog> 
 	<dialog id="19" charName="Kengo" place="date1">
-		<text>Hmm, well it's your choice of course, but I hope you wouldn't order moose meat if that was available...</text>
+		<text>Hmm, well it's your choice of course, but I hope you wouldn't order moose meat if it was available...</text>
 		<options>
 			<option id="2" link="20" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
@@ -185,7 +185,7 @@
 		</options>
 	</dialog> 
 	<dialog id="29" charName="Kengo" place="date1">
-		<text>You too? Well, I do just fine.</text>
+		<text>You too? Well, I do just fine...</text>
 		<options>
 			<option id="2" link="30" affection="0" isEnd="true" itemCheck="0">--></option>
 		</options>
