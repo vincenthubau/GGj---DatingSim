@@ -6,9 +6,10 @@ public class Player : MonoBehaviour {
 	public float gravity = 20.0F;
 	public float turnSpeed = 100.0F;
 	public float pushPower = 2.0F;
-	public float kickStrength = 1.0F;
+	public float ballKickStrength = 1.0F;
+	public float benchKickStrength = 5.0F;
 	public float colliderDistance = 1.2F;
-	public AudioClip[] ballKickAudio;
+//	public AudioClip[] ballKickAudio;
 
 	private Vector3 moveDirection = Vector3.zero;
 	private bool isCollided = false;
@@ -24,6 +25,9 @@ public class Player : MonoBehaviour {
 		CharacterController controller = GetComponent<CharacterController>();
 		//Feed moveDirection with input.
 		if(!disableMove){
+
+
+
 			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 			moveDirection = transform.TransformDirection(moveDirection);
 
@@ -89,15 +93,17 @@ public class Player : MonoBehaviour {
 		if (hit.moveDirection.y < -0.3F)
 			return;
 		Vector3 pushDir;
-		if(Input.GetKey(KeyCode.E))
-			pushDir = new Vector3(hit.moveDirection.x, kickStrength, hit.moveDirection.z);
+		if(Input.GetKey(KeyCode.E) && body.tag == "Ball")
+			pushDir = new Vector3(hit.moveDirection.x, ballKickStrength, hit.moveDirection.z);
+		else if(Input.GetKey(KeyCode.E) && body.tag == "Bench")
+			pushDir = new Vector3(hit.moveDirection.x, benchKickStrength, hit.moveDirection.z);
 		else
 			pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 		body.velocity += pushDir * pushPower;
-		if(hit.collider.tag == "Ball" && !audio.isPlaying){
-			audio.clip = ballKickAudio[Random.Range(0,ballKickAudio.Length)];
-			audio.Play();
-		}
+//		if(hit.collider.tag == "Ball" && !audio.isPlaying){
+//			audio.clip = ballKickAudio[Random.Range(0,ballKickAudio.Length)];
+//			audio.Play();
+//		}
 	}
 
 	public void SetDisableMoveFalse(){
